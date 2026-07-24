@@ -1,0 +1,17 @@
+series,series_role,source,scale,scale_definition,sample,estimand,persistence_r2,observations,countries,folds_used,predictor,model_fitted
+Corrected_Annual_Net_Flow,Decision-bearing primary target (BX.KLT.DINV.CD.WD),corrected_panel,asinh,signed asinh of US$ millions,all_available,country_fold_median,0.18847,6413,202,5,y[t-1],False
+Corrected_Annual_Net_Flow,Decision-bearing primary target (BX.KLT.DINV.CD.WD),corrected_panel,asinh,signed asinh of US$ millions,all_available,pooled_consecutive_country_years,0.198852,6413,202,0,y[t-1],False
+Corrected_Annual_Net_Flow,Decision-bearing primary target (BX.KLT.DINV.CD.WD),corrected_panel,raw,US$ millions,all_available,country_fold_median,0.346818,6413,202,5,y[t-1],False
+Corrected_Annual_Net_Flow,Decision-bearing primary target (BX.KLT.DINV.CD.WD),corrected_panel,raw,US$ millions,all_available,pooled_consecutive_country_years,0.541215,6413,202,0,y[t-1],False
+Corrected_Annual_Net_Flow,Decision-bearing primary target (BX.KLT.DINV.CD.WD),corrected_panel,asinh,signed asinh of US$ millions,common_support,country_fold_median,-0.107327,2321,92,5,y[t-1],False
+Corrected_Annual_Net_Flow,Decision-bearing primary target (BX.KLT.DINV.CD.WD),corrected_panel,asinh,signed asinh of US$ millions,common_support,pooled_consecutive_country_years,-0.159115,2321,92,0,y[t-1],False
+Corrected_Annual_Net_Flow,Decision-bearing primary target (BX.KLT.DINV.CD.WD),corrected_panel,raw,US$ millions,common_support,country_fold_median,0.321973,2321,92,5,y[t-1],False
+Corrected_Annual_Net_Flow,Decision-bearing primary target (BX.KLT.DINV.CD.WD),corrected_panel,raw,US$ millions,common_support,pooled_consecutive_country_years,0.567142,2321,92,0,y[t-1],False
+Legacy_Stock_Mislabelled_As_Flow,Legacy target retained as forensic exhibit only,forensic_archive,asinh,signed asinh of US$ millions,all_available,country_fold_median,0.985612,2341,92,5,y[t-1],False
+Legacy_Stock_Mislabelled_As_Flow,Legacy target retained as forensic exhibit only,forensic_archive,asinh,signed asinh of US$ millions,all_available,pooled_consecutive_country_years,0.987088,2341,92,0,y[t-1],False
+Legacy_Stock_Mislabelled_As_Flow,Legacy target retained as forensic exhibit only,forensic_archive,raw,US$ millions,all_available,country_fold_median,0.970453,2341,92,5,y[t-1],False
+Legacy_Stock_Mislabelled_As_Flow,Legacy target retained as forensic exhibit only,forensic_archive,raw,US$ millions,all_available,pooled_consecutive_country_years,0.969999,2341,92,0,y[t-1],False
+Legacy_Stock_Mislabelled_As_Flow,Legacy target retained as forensic exhibit only,forensic_archive,asinh,signed asinh of US$ millions,common_support,country_fold_median,0.985612,2321,92,5,y[t-1],False
+Legacy_Stock_Mislabelled_As_Flow,Legacy target retained as forensic exhibit only,forensic_archive,asinh,signed asinh of US$ millions,common_support,pooled_consecutive_country_years,0.986927,2321,92,0,y[t-1],False
+Legacy_Stock_Mislabelled_As_Flow,Legacy target retained as forensic exhibit only,forensic_archive,raw,US$ millions,common_support,country_fold_median,0.970453,2321,92,5,y[t-1],False
+Legacy_Stock_Mislabelled_As_Flow,Legacy target retained as forensic exhibit only,forensic_archive,raw,US$ millions,common_support,pooled_consecutive_country_years,0.969982,2321,92,0,y[t-1],False

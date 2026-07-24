@@ -1,0 +1,28 @@
+# Python caches and environments
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.venv/
+venv/
+env/
+
+# Editors and OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Temporary reproducibility runs and logs
+_repro_run_*/
+_tmp_*/
+*.tmp
+*.bak
+*.swp
+
+# Jupyter transient files
+.ipynb_checkpoints/
+
+# Archives generated locally
+*.zip
+*.tar.gz

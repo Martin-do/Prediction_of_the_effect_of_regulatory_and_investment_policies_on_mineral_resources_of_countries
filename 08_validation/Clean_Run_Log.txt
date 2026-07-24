@@ -1,0 +1,557 @@
+MS2 clean pipeline run started: 2026-07-23T20:42:17.040524+00:00
+
+=== C:\Users\USER\Documents\python_codes\super_project\MS2_GitHub\Prediction_reg-inv_min-res\.venv\Scripts\python.exe C:\Users\USER\Documents\python_codes\super_project\MS2_GitHub\Prediction_reg-inv_min-res\04_pipeline\01_validate_raw_sources.py ===
+      indicator_code  non_null_values  minimum_year  maximum_year validation_status
+   BX.KLT.DINV.CD.WD            12096          1970          2024              PASS
+BX.KLT.DINV.WD.GD.ZS            11737          1970          2024              PASS
+      EG.ELC.ACCS.ZS             7835          1990          2023              PASS
+      FP.CPI.TOTL.ZG            11472          1960          2025              PASS
+      NE.TRD.GNFS.ZS            11218          1960          2025              PASS
+      NY.GDP.MKTP.CD            14743          1960          2025              PASS
+   NY.GDP.MKTP.KD.ZG            14321          1961          2025              PASS
+   NY.GDP.PETR.RT.ZS            10767          1970          2021              PASS
+         SP.POP.TOTL            17394          1960          2025              PASS
+WGI-2025-RQ-ESTIMATE             5341          1996          2024              PASS
+
+
+
+=== C:\Users\USER\Documents\python_codes\super_project\MS2_GitHub\Prediction_reg-inv_min-res\.venv\Scripts\python.exe C:\Users\USER\Documents\python_codes\super_project\MS2_GitHub\Prediction_reg-inv_min-res\04_pipeline\02_build_panel_v3.py ===
+Panel rows: 7,595
+Countries: 217
+Years: 1990-2024
+FDI flow observations: 6,635
+Negative FDI flows retained: 504
+Nigeria rows: 35; FDI observations: 35
+
+
+
+=== C:\Users\USER\Documents\python_codes\super_project\MS2_GitHub\Prediction_reg-inv_min-res\.venv\Scripts\python.exe C:\Users\USER\Documents\python_codes\super_project\MS2_GitHub\Prediction_reg-inv_min-res\04_pipeline\03_assign_country_folds.py ===
+ Country_Fold  countries
+            0         42
+            1         47
+            2         44
+            3         42
+            4         42
+
+
+
+=== C:\Users\USER\Documents\python_codes\super_project\MS2_GitHub\Prediction_reg-inv_min-res\.venv\Scripts\python.exe C:\Users\USER\Documents\python_codes\super_project\MS2_GitHub\Prediction_reg-inv_min-res\04_pipeline\04_lock_samples.py ===
+                 signal      target_role                           universe  country_years  countries  nigeria_included
+ Oil_Rents_GDP_Pct_lag1          primary                       All_Eligible           4735        185              True
+ Oil_Rents_GDP_Pct_lag1          primary  Oil_Rent_Intensive_Pre2016_ge1pct           1690         69              True
+ Oil_Rents_GDP_Pct_lag1          primary  Oil_Rent_Intensive_Pre2016_ge5pct           1077         45              True
+ Oil_Rents_GDP_Pct_lag1          primary Oil_Rent_Intensive_Pre2016_ge10pct            777         34              True
+ Oil_Rents_GDP_Pct_lag1          primary Oil_Rent_Intensive_Pre2016_ge15pct            680         30              True
+ Oil_Rents_GDP_Pct_lag1       normalized                       All_Eligible           4734        185              True
+ Oil_Rents_GDP_Pct_lag1       normalized  Oil_Rent_Intensive_Pre2016_ge1pct           1689         69              True
+ Oil_Rents_GDP_Pct_lag1       normalized  Oil_Rent_Intensive_Pre2016_ge5pct           1076         45              True
+ Oil_Rents_GDP_Pct_lag1       normalized Oil_Rent_Intensive_Pre2016_ge10pct            776         34              True
+ Oil_Rents_GDP_Pct_lag1       normalized Oil_Rent_Intensive_Pre2016_ge15pct            679         30              True
+ Oil_Rents_GDP_Pct_lag1 raw_ratio_stress                       All_Eligible           4734        185              True
+Regulatory_Quality_lag1          primary                       All_Eligible           3829        184              True
+Regulatory_Quality_lag1          primary  Oil_Rent_Intensive_Pre2016_ge1pct           1391         69              True
+Regulatory_Quality_lag1          primary  Oil_Rent_Intensive_Pre2016_ge5pct            893         45              True
+Regulatory_Quality_lag1          primary Oil_Rent_Intensive_Pre2016_ge10pct            655         34              True
+Regulatory_Quality_lag1          primary Oil_Rent_Intensive_Pre2016_ge15pct            571         30              True
+Regulatory_Quality_lag1       normalized                       All_Eligible           3828        184              True
+Regulatory_Quality_lag1       normalized  Oil_Rent_Intensive_Pre2016_ge1pct           1390         69              True
+Regulatory_Quality_lag1       normalized  Oil_Rent_Intensive_Pre2016_ge5pct            892         45              True
+Regulatory_Quality_lag1       normalized Oil_Rent_Intensive_Pre2016_ge10pct            654         34              True
+Regulatory_Quality_lag1       normalized Oil_Rent_Intensive_Pre2016_ge15pct            570         30              True
+Regulatory_Quality_lag1 raw_ratio_stress                       All_Eligible           3828        184              True
+
+
+
+=== C:\Users\USER\Documents\python_codes\super_project\MS2_GitHub\Prediction_reg-inv_min-res\.venv\Scripts\python.exe C:\Users\USER\Documents\python_codes\super_project\MS2_GitHub\Prediction_reg-inv_min-res\04_pipeline\05_run_corrected_audit.py --sample-id M1_Macro_vs_M2_Macro_Oil__primary__Oil_Rent_Intensive_Pre2016_ge1pct ===
+Completed M1_Macro_vs_M2_Macro_Oil__primary__Oil_Rent_Intensive_Pre2016_ge1pct: 60 model rows, 30 benchmark rows, 3591 frozen country contributions
+
+
+
+=== C:\Users\USER\Documents\python_codes\super_project\MS2_GitHub\Prediction_reg-inv_min-res\.venv\Scripts\python.exe C:\Users\USER\Documents\python_codes\super_project\MS2_GitHub\Prediction_reg-inv_min-res\04_pipeline\05_run_corrected_audit.py --sample-id M1_Macro_vs_M2_Macro_Oil__primary__All_Eligible ===
+Completed M1_Macro_vs_M2_Macro_Oil__primary__All_Eligible: 60 model rows, 30 benchmark rows, 9837 frozen country contributions
+
+
+
+=== C:\Users\USER\Documents\python_codes\super_project\MS2_GitHub\Prediction_reg-inv_min-res\.venv\Scripts\python.exe C:\Users\USER\Documents\python_codes\super_project\MS2_GitHub\Prediction_reg-inv_min-res\04_pipeline\05_run_corrected_audit.py --sample-id M1_Macro_vs_M2_Macro_Oil__primary__Oil_Rent_Intensive_Pre2016_ge5pct ===
+Completed M1_Macro_vs_M2_Macro_Oil__primary__Oil_Rent_Intensive_Pre2016_ge5pct: 60 model rows, 30 benchmark rows, 2313 frozen country contributions
+
+
+
+=== C:\Users\USER\Documents\python_codes\super_project\MS2_GitHub\Prediction_reg-inv_min-res\.venv\Scripts\python.exe C:\Users\USER\Documents\python_codes\super_project\MS2_GitHub\Prediction_reg-inv_min-res\04_pipeline\05_run_corrected_audit.py --sample-id M1_Macro_vs_M2_Macro_Oil__primary__Oil_Rent_Intensive_Pre2016_ge10pct ===
+Completed M1_Macro_vs_M2_Macro_Oil__primary__Oil_Rent_Intensive_Pre2016_ge10pct: 60 model rows, 30 benchmark rows, 1719 frozen country contributions
+
+
+
+=== C:\Users\USER\Documents\python_codes\super_project\MS2_GitHub\Prediction_reg-inv_min-res\.venv\Scripts\python.exe C:\Users\USER\Documents\python_codes\super_project\MS2_GitHub\Prediction_reg-inv_min-res\04_pipeline\05_run_corrected_audit.py --sample-id M1_Macro_vs_M2_Macro_Oil__primary__Oil_Rent_Intensive_Pre2016_ge15pct ===
+Completed M1_Macro_vs_M2_Macro_Oil__primary__Oil_Rent_Intensive_Pre2016_ge15pct: 60 model rows, 30 benchmark rows, 1503 frozen country contributions
+
+
+
+=== C:\Users\USER\Documents\python_codes\super_project\MS2_GitHub\Prediction_reg-inv_min-res\.venv\Scripts\python.exe C:\Users\USER\Documents\python_codes\super_project\MS2_GitHub\Prediction_reg-inv_min-res\04_pipeline\05_run_corrected_audit.py --sample-id M1_Macro_vs_M2_Macro_Oil__normalized__All_Eligible ===
+Completed M1_Macro_vs_M2_Macro_Oil__normalized__All_Eligible: 60 model rows, 30 benchmark rows, 9828 frozen country contributions
+
+
+
+=== C:\Users\USER\Documents\python_codes\super_project\MS2_GitHub\Prediction_reg-inv_min-res\.venv\Scripts\python.exe C:\Users\USER\Documents\python_codes\super_project\MS2_GitHub\Prediction_reg-inv_min-res\04_pipeline\05_run_corrected_audit.py --sample-id M1_Macro_vs_M2_Macro_Oil__normalized__Oil_Rent_Intensive_Pre2016_ge1pct ===
+Completed M1_Macro_vs_M2_Macro_Oil__normalized__Oil_Rent_Intensive_Pre2016_ge1pct: 60 model rows, 30 benchmark rows, 3582 frozen country contributions
+
+
+
+=== C:\Users\USER\Documents\python_codes\super_project\MS2_GitHub\Prediction_reg-inv_min-res\.venv\Scripts\python.exe C:\Users\USER\Documents\python_codes\super_project\MS2_GitHub\Prediction_reg-inv_min-res\04_pipeline\05_run_corrected_audit.py --sample-id M1_Macro_vs_M2_Macro_Oil__normalized__Oil_Rent_Intensive_Pre2016_ge5pct ===
+Completed M1_Macro_vs_M2_Macro_Oil__normalized__Oil_Rent_Intensive_Pre2016_ge5pct: 60 model rows, 30 benchmark rows, 2304 frozen country contributions
+
+
+
+=== C:\Users\USER\Documents\python_codes\super_project\MS2_GitHub\Prediction_reg-inv_min-res\.venv\Scripts\python.exe C:\Users\USER\Documents\python_codes\super_project\MS2_GitHub\Prediction_reg-inv_min-res\04_pipeline\05_run_corrected_audit.py --sample-id M1_Macro_vs_M2_Macro_Oil__normalized__Oil_Rent_Intensive_Pre2016_ge10pct ===
+Completed M1_Macro_vs_M2_Macro_Oil__normalized__Oil_Rent_Intensive_Pre2016_ge10pct: 60 model rows, 30 benchmark rows, 1710 frozen country contributions
+
+
+
+=== C:\Users\USER\Documents\python_codes\super_project\MS2_GitHub\Prediction_reg-inv_min-res\.venv\Scripts\python.exe C:\Users\USER\Documents\python_codes\super_project\MS2_GitHub\Prediction_reg-inv_min-res\04_pipeline\05_run_corrected_audit.py --sample-id M1_Macro_vs_M2_Macro_Oil__normalized__Oil_Rent_Intensive_Pre2016_ge15pct ===
+Completed M1_Macro_vs_M2_Macro_Oil__normalized__Oil_Rent_Intensive_Pre2016_ge15pct: 60 model rows, 30 benchmark rows, 1494 frozen country contributions
+
+
+
+=== C:\Users\USER\Documents\python_codes\super_project\MS2_GitHub\Prediction_reg-inv_min-res\.venv\Scripts\python.exe C:\Users\USER\Documents\python_codes\super_project\MS2_GitHub\Prediction_reg-inv_min-res\04_pipeline\05_run_corrected_audit.py --sample-id M1_Macro_vs_M2_Macro_Oil__raw_ratio_stress__All_Eligible ===
+Completed M1_Macro_vs_M2_Macro_Oil__raw_ratio_stress__All_Eligible: 60 model rows, 30 benchmark rows, 9828 frozen country contributions
+
+
+
+=== C:\Users\USER\Documents\python_codes\super_project\MS2_GitHub\Prediction_reg-inv_min-res\.venv\Scripts\python.exe C:\Users\USER\Documents\python_codes\super_project\MS2_GitHub\Prediction_reg-inv_min-res\04_pipeline\05_run_corrected_audit.py --sample-id M2_Macro_Oil_vs_M3_Macro_Oil_RegQuality__primary__All_Eligible ===
+Completed M2_Macro_Oil_vs_M3_Macro_Oil_RegQuality__primary__All_Eligible: 60 model rows, 30 benchmark rows, 9792 frozen country contributions
+
+
+
+=== C:\Users\USER\Documents\python_codes\super_project\MS2_GitHub\Prediction_reg-inv_min-res\.venv\Scripts\python.exe C:\Users\USER\Documents\python_codes\super_project\MS2_GitHub\Prediction_reg-inv_min-res\04_pipeline\05_run_corrected_audit.py --sample-id M2_Macro_Oil_vs_M3_Macro_Oil_RegQuality__primary__Oil_Rent_Intensive_Pre2016_ge1pct ===
+Completed M2_Macro_Oil_vs_M3_Macro_Oil_RegQuality__primary__Oil_Rent_Intensive_Pre2016_ge1pct: 60 model rows, 30 benchmark rows, 3591 frozen country contributions
+
+
+
+=== C:\Users\USER\Documents\python_codes\super_project\MS2_GitHub\Prediction_reg-inv_min-res\.venv\Scripts\python.exe C:\Users\USER\Documents\python_codes\super_project\MS2_GitHub\Prediction_reg-inv_min-res\04_pipeline\05_run_corrected_audit.py --sample-id M2_Macro_Oil_vs_M3_Macro_Oil_RegQuality__primary__Oil_Rent_Intensive_Pre2016_ge5pct ===
+Completed M2_Macro_Oil_vs_M3_Macro_Oil_RegQuality__primary__Oil_Rent_Intensive_Pre2016_ge5pct: 60 model rows, 30 benchmark rows, 2313 frozen country contributions
+
+
+
+=== C:\Users\USER\Documents\python_codes\super_project\MS2_GitHub\Prediction_reg-inv_min-res\.venv\Scripts\python.exe C:\Users\USER\Documents\python_codes\super_project\MS2_GitHub\Prediction_reg-inv_min-res\04_pipeline\05_run_corrected_audit.py --sample-id M2_Macro_Oil_vs_M3_Macro_Oil_RegQuality__primary__Oil_Rent_Intensive_Pre2016_ge10pct ===
+Completed M2_Macro_Oil_vs_M3_Macro_Oil_RegQuality__primary__Oil_Rent_Intensive_Pre2016_ge10pct: 60 model rows, 30 benchmark rows, 1719 frozen country contributions
+
+
+
+=== C:\Users\USER\Documents\python_codes\super_project\MS2_GitHub\Prediction_reg-inv_min-res\.venv\Scripts\python.exe C:\Users\USER\Documents\python_codes\super_project\MS2_GitHub\Prediction_reg-inv_min-res\04_pipeline\05_run_corrected_audit.py --sample-id M2_Macro_Oil_vs_M3_Macro_Oil_RegQuality__primary__Oil_Rent_Intensive_Pre2016_ge15pct ===
+Completed M2_Macro_Oil_vs_M3_Macro_Oil_RegQuality__primary__Oil_Rent_Intensive_Pre2016_ge15pct: 60 model rows, 30 benchmark rows, 1503 frozen country contributions
+
+
+
+=== C:\Users\USER\Documents\python_codes\super_project\MS2_GitHub\Prediction_reg-inv_min-res\.venv\Scripts\python.exe C:\Users\USER\Documents\python_codes\super_project\MS2_GitHub\Prediction_reg-inv_min-res\04_pipeline\05_run_corrected_audit.py --sample-id M2_Macro_Oil_vs_M3_Macro_Oil_RegQuality__normalized__Oil_Rent_Intensive_Pre2016_ge1pct ===
+Completed M2_Macro_Oil_vs_M3_Macro_Oil_RegQuality__normalized__Oil_Rent_Intensive_Pre2016_ge1pct: 60 model rows, 30 benchmark rows, 3582 frozen country contributions
+
+
+
+=== C:\Users\USER\Documents\python_codes\super_project\MS2_GitHub\Prediction_reg-inv_min-res\.venv\Scripts\python.exe C:\Users\USER\Documents\python_codes\super_project\MS2_GitHub\Prediction_reg-inv_min-res\04_pipeline\05_run_corrected_audit.py --sample-id M2_Macro_Oil_vs_M3_Macro_Oil_RegQuality__normalized__All_Eligible ===
+Completed M2_Macro_Oil_vs_M3_Macro_Oil_RegQuality__normalized__All_Eligible: 60 model rows, 30 benchmark rows, 9783 frozen country contributions
+
+
+
+=== C:\Users\USER\Documents\python_codes\super_project\MS2_GitHub\Prediction_reg-inv_min-res\.venv\Scripts\python.exe C:\Users\USER\Documents\python_codes\super_project\MS2_GitHub\Prediction_reg-inv_min-res\04_pipeline\05_run_corrected_audit.py --sample-id M2_Macro_Oil_vs_M3_Macro_Oil_RegQuality__normalized__Oil_Rent_Intensive_Pre2016_ge5pct ===
+Completed M2_Macro_Oil_vs_M3_Macro_Oil_RegQuality__normalized__Oil_Rent_Intensive_Pre2016_ge5pct: 60 model rows, 30 benchmark rows, 2304 frozen country contributions
+
+
+
+=== C:\Users\USER\Documents\python_codes\super_project\MS2_GitHub\Prediction_reg-inv_min-res\.venv\Scripts\python.exe C:\Users\USER\Documents\python_codes\super_project\MS2_GitHub\Prediction_reg-inv_min-res\04_pipeline\05_run_corrected_audit.py --sample-id M2_Macro_Oil_vs_M3_Macro_Oil_RegQuality__normalized__Oil_Rent_Intensive_Pre2016_ge10pct ===
+Completed M2_Macro_Oil_vs_M3_Macro_Oil_RegQuality__normalized__Oil_Rent_Intensive_Pre2016_ge10pct: 60 model rows, 30 benchmark rows, 1710 frozen country contributions
+
+
+
+=== C:\Users\USER\Documents\python_codes\super_project\MS2_GitHub\Prediction_reg-inv_min-res\.venv\Scripts\python.exe C:\Users\USER\Documents\python_codes\super_project\MS2_GitHub\Prediction_reg-inv_min-res\04_pipeline\05_run_corrected_audit.py --sample-id M2_Macro_Oil_vs_M3_Macro_Oil_RegQuality__normalized__Oil_Rent_Intensive_Pre2016_ge15pct ===
+Completed M2_Macro_Oil_vs_M3_Macro_Oil_RegQuality__normalized__Oil_Rent_Intensive_Pre2016_ge15pct: 60 model rows, 30 benchmark rows, 1494 frozen country contributions
+
+
+
+=== C:\Users\USER\Documents\python_codes\super_project\MS2_GitHub\Prediction_reg-inv_min-res\.venv\Scripts\python.exe C:\Users\USER\Documents\python_codes\super_project\MS2_GitHub\Prediction_reg-inv_min-res\04_pipeline\05_run_corrected_audit.py --sample-id M2_Macro_Oil_vs_M3_Macro_Oil_RegQuality__raw_ratio_stress__All_Eligible ===
+Completed M2_Macro_Oil_vs_M3_Macro_Oil_RegQuality__raw_ratio_stress__All_Eligible: 60 model rows, 30 benchmark rows, 9783 frozen country contributions
+
+
+
+=== C:\Users\USER\Documents\python_codes\super_project\MS2_GitHub\Prediction_reg-inv_min-res\.venv\Scripts\python.exe C:\Users\USER\Documents\python_codes\super_project\MS2_GitHub\Prediction_reg-inv_min-res\04_pipeline\05_run_corrected_audit.py --finalize ===
+                 signal      target_role                            target                           universe         validation  comparisons  median_delta_r2  mean_delta_r2  positive_share  median_delta_mae  mae_improvement_share  minimum_delta_r2  maximum_delta_r2
+ Oil_Rents_GDP_Pct_lag1       normalized Inward_FDI_Net_Flow_GDP_Pct_asinh                       All_Eligible Country_Holdout_CV           15     4.326073e-03       0.000894        0.733333         -0.003219               0.600000         -0.077417          0.043679
+ Oil_Rents_GDP_Pct_lag1       normalized Inward_FDI_Net_Flow_GDP_Pct_asinh                       All_Eligible      Future_Period           15     5.859182e-03       0.008732        0.933333         -0.004354               1.000000         -0.000892          0.025735
+ Oil_Rents_GDP_Pct_lag1       normalized Inward_FDI_Net_Flow_GDP_Pct_asinh Oil_Rent_Intensive_Pre2016_ge10pct Country_Holdout_CV           15     6.062937e-03       0.011902        0.666667         -0.007319               0.600000         -0.015719          0.090770
+ Oil_Rents_GDP_Pct_lag1       normalized Inward_FDI_Net_Flow_GDP_Pct_asinh Oil_Rent_Intensive_Pre2016_ge10pct      Future_Period           15     2.952173e-03       0.003205        0.866667         -0.003749               0.933333         -0.015847          0.025808
+ Oil_Rents_GDP_Pct_lag1       normalized Inward_FDI_Net_Flow_GDP_Pct_asinh Oil_Rent_Intensive_Pre2016_ge15pct Country_Holdout_CV           15     1.611145e-03       0.001105        0.666667         -0.001608               0.800000         -0.073568          0.051824
+ Oil_Rents_GDP_Pct_lag1       normalized Inward_FDI_Net_Flow_GDP_Pct_asinh Oil_Rent_Intensive_Pre2016_ge15pct      Future_Period           15     1.556460e-03       0.005917        0.933333         -0.003000               0.866667         -0.027145          0.039454
+ Oil_Rents_GDP_Pct_lag1       normalized Inward_FDI_Net_Flow_GDP_Pct_asinh  Oil_Rent_Intensive_Pre2016_ge1pct Country_Holdout_CV           15     1.388013e-02       0.021169        0.866667          0.001980               0.466667         -0.002899          0.102620
+ Oil_Rents_GDP_Pct_lag1       normalized Inward_FDI_Net_Flow_GDP_Pct_asinh  Oil_Rent_Intensive_Pre2016_ge1pct      Future_Period           15     1.093118e-02       0.013912        1.000000         -0.008438               1.000000          0.001170          0.046421
+ Oil_Rents_GDP_Pct_lag1       normalized Inward_FDI_Net_Flow_GDP_Pct_asinh  Oil_Rent_Intensive_Pre2016_ge5pct Country_Holdout_CV           15     1.358006e-03       0.004635        0.600000         -0.000136               0.533333         -0.028218          0.047057
+ Oil_Rents_GDP_Pct_lag1       normalized Inward_FDI_Net_Flow_GDP_Pct_asinh  Oil_Rent_Intensive_Pre2016_ge5pct      Future_Period           15     5.095716e-03       0.004331        0.800000         -0.005809               0.933333         -0.014634          0.028614
+ Oil_Rents_GDP_Pct_lag1          primary         Inward_FDI_Net_Flow_asinh                       All_Eligible Country_Holdout_CV           15     9.883099e-03       0.014164        1.000000          0.009161               0.466667          0.003947          0.036498
+ Oil_Rents_GDP_Pct_lag1          primary         Inward_FDI_Net_Flow_asinh                       All_Eligible      Future_Period           15     7.849970e-03       0.011841        1.000000         -0.044927               1.000000          0.007463          0.026051
+ Oil_Rents_GDP_Pct_lag1          primary         Inward_FDI_Net_Flow_asinh Oil_Rent_Intensive_Pre2016_ge10pct Country_Holdout_CV           15     6.872696e-03       0.001084        0.666667          0.004156               0.466667         -0.047765          0.041298
+ Oil_Rents_GDP_Pct_lag1          primary         Inward_FDI_Net_Flow_asinh Oil_Rent_Intensive_Pre2016_ge10pct      Future_Period           15    -1.669397e-05      -0.002968        0.466667         -0.072394               0.800000         -0.020431          0.005403
+ Oil_Rents_GDP_Pct_lag1          primary         Inward_FDI_Net_Flow_asinh Oil_Rent_Intensive_Pre2016_ge15pct Country_Holdout_CV           15    -6.719722e-04      -0.002270        0.466667          0.001453               0.466667         -0.027476          0.043281
+ Oil_Rents_GDP_Pct_lag1          primary         Inward_FDI_Net_Flow_asinh Oil_Rent_Intensive_Pre2016_ge15pct      Future_Period           15    -4.514762e-03      -0.007760        0.266667         -0.078097               0.800000         -0.040718          0.015019
+ Oil_Rents_GDP_Pct_lag1          primary         Inward_FDI_Net_Flow_asinh  Oil_Rent_Intensive_Pre2016_ge1pct Country_Holdout_CV           15     1.977709e-02       0.020497        0.933333          0.016989               0.466667         -0.000805          0.060298
+ Oil_Rents_GDP_Pct_lag1          primary         Inward_FDI_Net_Flow_asinh  Oil_Rent_Intensive_Pre2016_ge1pct      Future_Period           15     1.166099e-02       0.011231        0.933333         -0.102817               1.000000         -0.006268          0.023063
+ Oil_Rents_GDP_Pct_lag1          primary         Inward_FDI_Net_Flow_asinh  Oil_Rent_Intensive_Pre2016_ge5pct Country_Holdout_CV           15     8.258756e-03       0.004375        0.666667          0.012225               0.400000         -0.058346          0.107530
+ Oil_Rents_GDP_Pct_lag1          primary         Inward_FDI_Net_Flow_asinh  Oil_Rent_Intensive_Pre2016_ge5pct      Future_Period           15     2.442848e-03       0.001336        0.733333         -0.091764               0.800000         -0.012683          0.010679
+ Oil_Rents_GDP_Pct_lag1 raw_ratio_stress       Inward_FDI_Net_Flow_GDP_Pct                       All_Eligible Country_Holdout_CV           15    -4.024270e-05       1.558465        0.466667          0.012423               0.466667         -0.032670         23.353605
+ Oil_Rents_GDP_Pct_lag1 raw_ratio_stress       Inward_FDI_Net_Flow_GDP_Pct                       All_Eligible      Future_Period           15     9.214896e-05      -0.018409        0.600000          0.001232               0.466667         -0.192432          0.022642
+Regulatory_Quality_lag1       normalized Inward_FDI_Net_Flow_GDP_Pct_asinh                       All_Eligible Country_Holdout_CV           15     7.381296e-03       0.007945        0.733333         -0.005232               0.800000         -0.005115          0.041967
+Regulatory_Quality_lag1       normalized Inward_FDI_Net_Flow_GDP_Pct_asinh                       All_Eligible      Future_Period           15     5.722403e-03       0.002955        0.800000         -0.002334               0.933333         -0.023687          0.019906
+Regulatory_Quality_lag1       normalized Inward_FDI_Net_Flow_GDP_Pct_asinh Oil_Rent_Intensive_Pre2016_ge10pct Country_Holdout_CV           15    -8.498350e-04      -0.006991        0.333333          0.000000               0.400000         -0.051452          0.030223
+Regulatory_Quality_lag1       normalized Inward_FDI_Net_Flow_GDP_Pct_asinh Oil_Rent_Intensive_Pre2016_ge10pct      Future_Period           15     4.264040e-04       0.005769        0.600000         -0.000445               0.866667         -0.044245          0.096934
+Regulatory_Quality_lag1       normalized Inward_FDI_Net_Flow_GDP_Pct_asinh Oil_Rent_Intensive_Pre2016_ge15pct Country_Holdout_CV           15    -2.791728e-03      -0.005196        0.266667          0.002833               0.333333         -0.049279          0.050234
+Regulatory_Quality_lag1       normalized Inward_FDI_Net_Flow_GDP_Pct_asinh Oil_Rent_Intensive_Pre2016_ge15pct      Future_Period           15    -2.072558e-03       0.000437        0.266667          0.000478               0.400000         -0.013214          0.021116
+Regulatory_Quality_lag1       normalized Inward_FDI_Net_Flow_GDP_Pct_asinh  Oil_Rent_Intensive_Pre2016_ge1pct Country_Holdout_CV           15     2.584176e-04      -0.002021        0.533333         -0.002675               0.733333         -0.060810          0.047690
+Regulatory_Quality_lag1       normalized Inward_FDI_Net_Flow_GDP_Pct_asinh  Oil_Rent_Intensive_Pre2016_ge1pct      Future_Period           15     1.277262e-03       0.000788        0.733333         -0.000491               0.933333         -0.034522          0.025646
+Regulatory_Quality_lag1       normalized Inward_FDI_Net_Flow_GDP_Pct_asinh  Oil_Rent_Intensive_Pre2016_ge5pct Country_Holdout_CV           15     2.144110e-04      -0.014702        0.533333         -0.000905               0.600000         -0.161360          0.025582
+Regulatory_Quality_lag1       normalized Inward_FDI_Net_Flow_GDP_Pct_asinh  Oil_Rent_Intensive_Pre2016_ge5pct      Future_Period           15     9.233359e-04      -0.000201        0.800000         -0.000869               0.866667         -0.036600          0.032026
+Regulatory_Quality_lag1          primary         Inward_FDI_Net_Flow_asinh                       All_Eligible Country_Holdout_CV           15     3.623335e-03       0.006818        0.666667         -0.012265               0.666667         -0.003220          0.035321
+Regulatory_Quality_lag1          primary         Inward_FDI_Net_Flow_asinh                       All_Eligible      Future_Period           15     2.573001e-03      -0.002074        0.733333          0.007532               0.333333         -0.031521          0.017666
+Regulatory_Quality_lag1          primary         Inward_FDI_Net_Flow_asinh Oil_Rent_Intensive_Pre2016_ge10pct Country_Holdout_CV           15     1.614706e-03       0.001875        0.600000         -0.009032               0.533333         -0.028768          0.053438
+Regulatory_Quality_lag1          primary         Inward_FDI_Net_Flow_asinh Oil_Rent_Intensive_Pre2016_ge10pct      Future_Period           15     1.355861e-03       0.000676        0.866667          0.000888               0.333333         -0.025379          0.012943
+Regulatory_Quality_lag1          primary         Inward_FDI_Net_Flow_asinh Oil_Rent_Intensive_Pre2016_ge15pct Country_Holdout_CV           15    -1.491705e-03      -0.004742        0.266667          0.014187               0.333333         -0.045429          0.063030
+Regulatory_Quality_lag1          primary         Inward_FDI_Net_Flow_asinh Oil_Rent_Intensive_Pre2016_ge15pct      Future_Period           15    -8.479335e-04       0.000327        0.133333          0.004637               0.333333         -0.005385          0.022899
+Regulatory_Quality_lag1          primary         Inward_FDI_Net_Flow_asinh  Oil_Rent_Intensive_Pre2016_ge1pct Country_Holdout_CV           15     2.752341e-03       0.008484        0.800000         -0.009775               0.733333         -0.006741          0.046055
+Regulatory_Quality_lag1          primary         Inward_FDI_Net_Flow_asinh  Oil_Rent_Intensive_Pre2016_ge1pct      Future_Period           15    -2.721063e-07       0.000629        0.466667          0.000022               0.400000         -0.011236          0.015309
+Regulatory_Quality_lag1          primary         Inward_FDI_Net_Flow_asinh  Oil_Rent_Intensive_Pre2016_ge5pct Country_Holdout_CV           15     3.075754e-03       0.004084        0.666667         -0.014321               0.733333         -0.016052          0.042651
+Regulatory_Quality_lag1          primary         Inward_FDI_Net_Flow_asinh  Oil_Rent_Intensive_Pre2016_ge5pct      Future_Period           15     1.457345e-03       0.001781        0.866667         -0.000719               0.600000         -0.014148          0.023827
+Regulatory_Quality_lag1 raw_ratio_stress       Inward_FDI_Net_Flow_GDP_Pct                       All_Eligible Country_Holdout_CV           15    -1.384538e-03      -0.344454        0.466667          0.066551               0.400000         -4.910438          0.016123
+Regulatory_Quality_lag1 raw_ratio_stress       Inward_FDI_Net_Flow_GDP_Pct                       All_Eligible      Future_Period           15     4.140854e-04       0.008791        0.800000         -0.029648               0.733333         -0.015037          0.080132
+
+Benchmark competitiveness
+                 signal      target_role                            target                           universe         validation  comparisons  median_model_minus_benchmark_r2  mean_model_minus_benchmark_r2  benchmark_positive_share  median_model_minus_benchmark_mae  benchmark_mae_improvement_share  minimum_model_minus_benchmark_r2  maximum_model_minus_benchmark_r2
+ Oil_Rents_GDP_Pct_lag1       normalized Inward_FDI_Net_Flow_GDP_Pct_asinh                       All_Eligible Country_Holdout_CV           15                         0.143151                       0.141221                  1.000000                          0.001936                         0.466667                          0.049975                          0.229251
+ Oil_Rents_GDP_Pct_lag1       normalized Inward_FDI_Net_Flow_GDP_Pct_asinh                       All_Eligible      Future_Period           15                         0.203575                       0.201185                  1.000000                         -0.272008                         1.000000                          0.152650                          0.227483
+ Oil_Rents_GDP_Pct_lag1       normalized Inward_FDI_Net_Flow_GDP_Pct_asinh Oil_Rent_Intensive_Pre2016_ge10pct Country_Holdout_CV           15                         0.103952                       0.120587                  0.933333                          0.036750                         0.200000                         -0.072792                          0.250131
+ Oil_Rents_GDP_Pct_lag1       normalized Inward_FDI_Net_Flow_GDP_Pct_asinh Oil_Rent_Intensive_Pre2016_ge10pct      Future_Period           15                         0.206554                       0.207051                  1.000000                         -0.013633                         0.666667                          0.157762                          0.255285
+ Oil_Rents_GDP_Pct_lag1       normalized Inward_FDI_Net_Flow_GDP_Pct_asinh Oil_Rent_Intensive_Pre2016_ge15pct Country_Holdout_CV           15                         0.123573                       0.103806                  0.933333                          0.044051                         0.000000                         -0.094836                          0.212912
+ Oil_Rents_GDP_Pct_lag1       normalized Inward_FDI_Net_Flow_GDP_Pct_asinh Oil_Rent_Intensive_Pre2016_ge15pct      Future_Period           15                         0.144315                       0.110470                  0.933333                          0.028540                         0.000000                         -0.006579                          0.157875
+ Oil_Rents_GDP_Pct_lag1       normalized Inward_FDI_Net_Flow_GDP_Pct_asinh  Oil_Rent_Intensive_Pre2016_ge1pct Country_Holdout_CV           15                         0.143058                       0.150072                  1.000000                          0.008489                         0.466667                          0.035498                          0.245905
+ Oil_Rents_GDP_Pct_lag1       normalized Inward_FDI_Net_Flow_GDP_Pct_asinh  Oil_Rent_Intensive_Pre2016_ge1pct      Future_Period           15                         0.206433                       0.206812                  1.000000                         -0.000102                         0.600000                          0.169907                          0.241098
+ Oil_Rents_GDP_Pct_lag1       normalized Inward_FDI_Net_Flow_GDP_Pct_asinh  Oil_Rent_Intensive_Pre2016_ge5pct Country_Holdout_CV           15                         0.114707                       0.111241                  0.933333                          0.026631                         0.000000                         -0.037957                          0.203557
+ Oil_Rents_GDP_Pct_lag1       normalized Inward_FDI_Net_Flow_GDP_Pct_asinh  Oil_Rent_Intensive_Pre2016_ge5pct      Future_Period           15                         0.189513                       0.193167                  1.000000                         -0.005307                         0.733333                          0.155267                          0.231498
+ Oil_Rents_GDP_Pct_lag1          primary         Inward_FDI_Net_Flow_asinh                       All_Eligible Country_Holdout_CV           15                         0.250881                       0.224944                  1.000000                          0.128197                         0.400000                          0.071288                          0.315320
+ Oil_Rents_GDP_Pct_lag1          primary         Inward_FDI_Net_Flow_asinh                       All_Eligible      Future_Period           15                         0.261849                       0.251249                  1.000000                         -1.221839                         1.000000                          0.188761                          0.279867
+ Oil_Rents_GDP_Pct_lag1          primary         Inward_FDI_Net_Flow_asinh Oil_Rent_Intensive_Pre2016_ge10pct Country_Holdout_CV           15                         0.097960                       0.112408                  0.933333                          0.302438                         0.400000                         -0.129779                          0.263074
+ Oil_Rents_GDP_Pct_lag1          primary         Inward_FDI_Net_Flow_asinh Oil_Rent_Intensive_Pre2016_ge10pct      Future_Period           15                         0.180496                       0.177574                  1.000000                          0.392984                         0.000000                          0.113893                          0.234037
+ Oil_Rents_GDP_Pct_lag1          primary         Inward_FDI_Net_Flow_asinh Oil_Rent_Intensive_Pre2016_ge15pct Country_Holdout_CV           15                         0.110895                       0.126347                  0.933333                          0.383582                         0.200000                         -0.060045                          0.358401
+ Oil_Rents_GDP_Pct_lag1          primary         Inward_FDI_Net_Flow_asinh Oil_Rent_Intensive_Pre2016_ge15pct      Future_Period           15                         0.055487                       0.055857                  0.933333                          0.609089                         0.000000                         -0.009863                          0.091200
+ Oil_Rents_GDP_Pct_lag1          primary         Inward_FDI_Net_Flow_asinh  Oil_Rent_Intensive_Pre2016_ge1pct Country_Holdout_CV           15                         0.230926                       0.189012                  1.000000                          0.141426                         0.400000                          0.059783                          0.411282
+ Oil_Rents_GDP_Pct_lag1          primary         Inward_FDI_Net_Flow_asinh  Oil_Rent_Intensive_Pre2016_ge1pct      Future_Period           15                         0.190291                       0.199881                  1.000000                          0.172162                         0.000000                          0.157112                          0.244395
+ Oil_Rents_GDP_Pct_lag1          primary         Inward_FDI_Net_Flow_asinh  Oil_Rent_Intensive_Pre2016_ge5pct Country_Holdout_CV           15                         0.130214                       0.135019                  1.000000                          0.441944                         0.200000                          0.017121                          0.224576
+ Oil_Rents_GDP_Pct_lag1          primary         Inward_FDI_Net_Flow_asinh  Oil_Rent_Intensive_Pre2016_ge5pct      Future_Period           15                         0.162185                       0.160909                  1.000000                          0.261307                         0.000000                          0.130987                          0.189299
+ Oil_Rents_GDP_Pct_lag1 raw_ratio_stress       Inward_FDI_Net_Flow_GDP_Pct                       All_Eligible Country_Holdout_CV           15                         0.069857                      -1.081592                  0.733333                          0.431547                         0.400000                        -16.814490                          0.108367
+ Oil_Rents_GDP_Pct_lag1 raw_ratio_stress       Inward_FDI_Net_Flow_GDP_Pct                       All_Eligible      Future_Period           15                        -0.152228                      -0.566484                  0.400000                         -1.677271                         0.866667                         -3.677064                          0.307047
+Regulatory_Quality_lag1       normalized Inward_FDI_Net_Flow_GDP_Pct_asinh                       All_Eligible Country_Holdout_CV           15                         0.152769                       0.161134                  1.000000                         -0.009533                         0.666667                          0.075026                          0.258033
+Regulatory_Quality_lag1       normalized Inward_FDI_Net_Flow_GDP_Pct_asinh                       All_Eligible      Future_Period           15                         0.229313                       0.222095                  1.000000                         -0.273030                         1.000000                          0.186439                          0.237122
+Regulatory_Quality_lag1       normalized Inward_FDI_Net_Flow_GDP_Pct_asinh Oil_Rent_Intensive_Pre2016_ge10pct Country_Holdout_CV           15                         0.126253                       0.118614                  0.933333                          0.033460                         0.333333                         -0.021810                          0.221684
+Regulatory_Quality_lag1       normalized Inward_FDI_Net_Flow_GDP_Pct_asinh Oil_Rent_Intensive_Pre2016_ge10pct      Future_Period           15                         0.201321                       0.208324                  1.000000                         -0.004703                         0.600000                          0.151558                          0.316798
+Regulatory_Quality_lag1       normalized Inward_FDI_Net_Flow_GDP_Pct_asinh Oil_Rent_Intensive_Pre2016_ge15pct Country_Holdout_CV           15                         0.070621                       0.082281                  0.933333                          0.037518                         0.000000                         -0.015867                          0.203459
+Regulatory_Quality_lag1       normalized Inward_FDI_Net_Flow_GDP_Pct_asinh Oil_Rent_Intensive_Pre2016_ge15pct      Future_Period           15                         0.133419                       0.102507                  1.000000                          0.043807                         0.000000                          0.011528                          0.148124
+Regulatory_Quality_lag1       normalized Inward_FDI_Net_Flow_GDP_Pct_asinh  Oil_Rent_Intensive_Pre2016_ge1pct Country_Holdout_CV           15                         0.154253                       0.143426                  1.000000                          0.022665                         0.466667                          0.033939                          0.276547
+Regulatory_Quality_lag1       normalized Inward_FDI_Net_Flow_GDP_Pct_asinh  Oil_Rent_Intensive_Pre2016_ge1pct      Future_Period           15                         0.206023                       0.205248                  1.000000                          0.004786                         0.266667                          0.184515                          0.228501
+Regulatory_Quality_lag1       normalized Inward_FDI_Net_Flow_GDP_Pct_asinh  Oil_Rent_Intensive_Pre2016_ge5pct Country_Holdout_CV           15                         0.075824                       0.090148                  0.800000                          0.036188                         0.133333                         -0.055640                          0.201532
+Regulatory_Quality_lag1       normalized Inward_FDI_Net_Flow_GDP_Pct_asinh  Oil_Rent_Intensive_Pre2016_ge5pct      Future_Period           15                         0.185567                       0.189973                  1.000000                         -0.002416                         0.600000                          0.134741                          0.260188
+Regulatory_Quality_lag1          primary         Inward_FDI_Net_Flow_asinh                       All_Eligible Country_Holdout_CV           15                         0.220990                       0.213926                  1.000000                          0.148811                         0.400000                          0.072321                          0.281267
+Regulatory_Quality_lag1          primary         Inward_FDI_Net_Flow_asinh                       All_Eligible      Future_Period           15                         0.256166                       0.249353                  1.000000                         -1.121586                         0.666667                          0.198287                          0.283357
+Regulatory_Quality_lag1          primary         Inward_FDI_Net_Flow_asinh Oil_Rent_Intensive_Pre2016_ge10pct Country_Holdout_CV           15                         0.056930                       0.104406                  0.733333                          0.319052                         0.400000                         -0.044975                          0.289325
+Regulatory_Quality_lag1          primary         Inward_FDI_Net_Flow_asinh Oil_Rent_Intensive_Pre2016_ge10pct      Future_Period           15                         0.158783                       0.168335                  1.000000                          0.379906                         0.000000                          0.116288                          0.280685
+Regulatory_Quality_lag1          primary         Inward_FDI_Net_Flow_asinh Oil_Rent_Intensive_Pre2016_ge15pct Country_Holdout_CV           15                         0.088095                       0.107711                  0.800000                          0.575865                         0.200000                         -0.071096                          0.363496
+Regulatory_Quality_lag1          primary         Inward_FDI_Net_Flow_asinh Oil_Rent_Intensive_Pre2016_ge15pct      Future_Period           15                         0.036765                       0.040737                  0.800000                          0.658345                         0.000000                         -0.013492                          0.092582
+Regulatory_Quality_lag1          primary         Inward_FDI_Net_Flow_asinh  Oil_Rent_Intensive_Pre2016_ge1pct Country_Holdout_CV           15                         0.149381                       0.165924                  1.000000                          0.171689                         0.400000                          0.033978                          0.376830
+Regulatory_Quality_lag1          primary         Inward_FDI_Net_Flow_asinh  Oil_Rent_Intensive_Pre2016_ge1pct      Future_Period           15                         0.185515                       0.187006                  1.000000                          0.176962                         0.000000                          0.146841                          0.241152
+Regulatory_Quality_lag1          primary         Inward_FDI_Net_Flow_asinh  Oil_Rent_Intensive_Pre2016_ge5pct Country_Holdout_CV           15                         0.094463                       0.104562                  0.866667                          0.268206                         0.200000                         -0.087838                          0.256704
+Regulatory_Quality_lag1          primary         Inward_FDI_Net_Flow_asinh  Oil_Rent_Intensive_Pre2016_ge5pct      Future_Period           15                         0.151744                       0.156215                  1.000000                          0.246188                         0.000000                          0.125873                          0.220779
+Regulatory_Quality_lag1 raw_ratio_stress       Inward_FDI_Net_Flow_GDP_Pct                       All_Eligible Country_Holdout_CV           15                         0.034178                      -0.887209                  0.666667                          0.581549                         0.266667                        -13.299434                          0.106888
+Regulatory_Quality_lag1 raw_ratio_stress       Inward_FDI_Net_Flow_GDP_Pct                       All_Eligible      Future_Period           15                        -0.154476                      -0.560695                  0.466667                         -2.288073                         1.000000                         -3.693796                          0.272549
+
+
+
+=== C:\Users\USER\Documents\python_codes\super_project\MS2_GitHub\Prediction_reg-inv_min-res\.venv\Scripts\python.exe C:\Users\USER\Documents\python_codes\super_project\MS2_GitHub\Prediction_reg-inv_min-res\04_pipeline\06_bootstrap_uncertainty.py --sample-id M1_Macro_vs_M2_Macro_Oil__primary__Oil_Rent_Intensive_Pre2016_ge1pct ===
+Completed bootstrap M1_Macro_vs_M2_Macro_Oil__primary__Oil_Rent_Intensive_Pre2016_ge1pct: 36 unit rows
+
+
+
+=== C:\Users\USER\Documents\python_codes\super_project\MS2_GitHub\Prediction_reg-inv_min-res\.venv\Scripts\python.exe C:\Users\USER\Documents\python_codes\super_project\MS2_GitHub\Prediction_reg-inv_min-res\04_pipeline\06_bootstrap_uncertainty.py --sample-id M1_Macro_vs_M2_Macro_Oil__primary__All_Eligible ===
+Completed bootstrap M1_Macro_vs_M2_Macro_Oil__primary__All_Eligible: 36 unit rows
+
+
+
+=== C:\Users\USER\Documents\python_codes\super_project\MS2_GitHub\Prediction_reg-inv_min-res\.venv\Scripts\python.exe C:\Users\USER\Documents\python_codes\super_project\MS2_GitHub\Prediction_reg-inv_min-res\04_pipeline\06_bootstrap_uncertainty.py --sample-id M1_Macro_vs_M2_Macro_Oil__primary__Oil_Rent_Intensive_Pre2016_ge5pct ===
+Completed bootstrap M1_Macro_vs_M2_Macro_Oil__primary__Oil_Rent_Intensive_Pre2016_ge5pct: 36 unit rows
+
+
+
+=== C:\Users\USER\Documents\python_codes\super_project\MS2_GitHub\Prediction_reg-inv_min-res\.venv\Scripts\python.exe C:\Users\USER\Documents\python_codes\super_project\MS2_GitHub\Prediction_reg-inv_min-res\04_pipeline\06_bootstrap_uncertainty.py --sample-id M1_Macro_vs_M2_Macro_Oil__primary__Oil_Rent_Intensive_Pre2016_ge10pct ===
+Completed bootstrap M1_Macro_vs_M2_Macro_Oil__primary__Oil_Rent_Intensive_Pre2016_ge10pct: 36 unit rows
+
+
+
+=== C:\Users\USER\Documents\python_codes\super_project\MS2_GitHub\Prediction_reg-inv_min-res\.venv\Scripts\python.exe C:\Users\USER\Documents\python_codes\super_project\MS2_GitHub\Prediction_reg-inv_min-res\04_pipeline\06_bootstrap_uncertainty.py --sample-id M1_Macro_vs_M2_Macro_Oil__primary__Oil_Rent_Intensive_Pre2016_ge15pct ===
+Completed bootstrap M1_Macro_vs_M2_Macro_Oil__primary__Oil_Rent_Intensive_Pre2016_ge15pct: 36 unit rows
+
+
+
+=== C:\Users\USER\Documents\python_codes\super_project\MS2_GitHub\Prediction_reg-inv_min-res\.venv\Scripts\python.exe C:\Users\USER\Documents\python_codes\super_project\MS2_GitHub\Prediction_reg-inv_min-res\04_pipeline\06_bootstrap_uncertainty.py --sample-id M1_Macro_vs_M2_Macro_Oil__normalized__All_Eligible ===
+Completed bootstrap M1_Macro_vs_M2_Macro_Oil__normalized__All_Eligible: 36 unit rows
+
+
+
+=== C:\Users\USER\Documents\python_codes\super_project\MS2_GitHub\Prediction_reg-inv_min-res\.venv\Scripts\python.exe C:\Users\USER\Documents\python_codes\super_project\MS2_GitHub\Prediction_reg-inv_min-res\04_pipeline\06_bootstrap_uncertainty.py --sample-id M1_Macro_vs_M2_Macro_Oil__normalized__Oil_Rent_Intensive_Pre2016_ge1pct ===
+Completed bootstrap M1_Macro_vs_M2_Macro_Oil__normalized__Oil_Rent_Intensive_Pre2016_ge1pct: 36 unit rows
+
+
+
+=== C:\Users\USER\Documents\python_codes\super_project\MS2_GitHub\Prediction_reg-inv_min-res\.venv\Scripts\python.exe C:\Users\USER\Documents\python_codes\super_project\MS2_GitHub\Prediction_reg-inv_min-res\04_pipeline\06_bootstrap_uncertainty.py --sample-id M1_Macro_vs_M2_Macro_Oil__normalized__Oil_Rent_Intensive_Pre2016_ge5pct ===
+Completed bootstrap M1_Macro_vs_M2_Macro_Oil__normalized__Oil_Rent_Intensive_Pre2016_ge5pct: 36 unit rows
+
+
+
+=== C:\Users\USER\Documents\python_codes\super_project\MS2_GitHub\Prediction_reg-inv_min-res\.venv\Scripts\python.exe C:\Users\USER\Documents\python_codes\super_project\MS2_GitHub\Prediction_reg-inv_min-res\04_pipeline\06_bootstrap_uncertainty.py --sample-id M1_Macro_vs_M2_Macro_Oil__normalized__Oil_Rent_Intensive_Pre2016_ge10pct ===
+Completed bootstrap M1_Macro_vs_M2_Macro_Oil__normalized__Oil_Rent_Intensive_Pre2016_ge10pct: 36 unit rows
+
+
+
+=== C:\Users\USER\Documents\python_codes\super_project\MS2_GitHub\Prediction_reg-inv_min-res\.venv\Scripts\python.exe C:\Users\USER\Documents\python_codes\super_project\MS2_GitHub\Prediction_reg-inv_min-res\04_pipeline\06_bootstrap_uncertainty.py --sample-id M1_Macro_vs_M2_Macro_Oil__normalized__Oil_Rent_Intensive_Pre2016_ge15pct ===
+Completed bootstrap M1_Macro_vs_M2_Macro_Oil__normalized__Oil_Rent_Intensive_Pre2016_ge15pct: 36 unit rows
+
+
+
+=== C:\Users\USER\Documents\python_codes\super_project\MS2_GitHub\Prediction_reg-inv_min-res\.venv\Scripts\python.exe C:\Users\USER\Documents\python_codes\super_project\MS2_GitHub\Prediction_reg-inv_min-res\04_pipeline\06_bootstrap_uncertainty.py --sample-id M1_Macro_vs_M2_Macro_Oil__raw_ratio_stress__All_Eligible ===
+Completed bootstrap M1_Macro_vs_M2_Macro_Oil__raw_ratio_stress__All_Eligible: 36 unit rows
+
+
+
+=== C:\Users\USER\Documents\python_codes\super_project\MS2_GitHub\Prediction_reg-inv_min-res\.venv\Scripts\python.exe C:\Users\USER\Documents\python_codes\super_project\MS2_GitHub\Prediction_reg-inv_min-res\04_pipeline\06_bootstrap_uncertainty.py --sample-id M2_Macro_Oil_vs_M3_Macro_Oil_RegQuality__primary__All_Eligible ===
+Completed bootstrap M2_Macro_Oil_vs_M3_Macro_Oil_RegQuality__primary__All_Eligible: 36 unit rows
+
+
+
+=== C:\Users\USER\Documents\python_codes\super_project\MS2_GitHub\Prediction_reg-inv_min-res\.venv\Scripts\python.exe C:\Users\USER\Documents\python_codes\super_project\MS2_GitHub\Prediction_reg-inv_min-res\04_pipeline\06_bootstrap_uncertainty.py --sample-id M2_Macro_Oil_vs_M3_Macro_Oil_RegQuality__primary__Oil_Rent_Intensive_Pre2016_ge1pct ===
+Completed bootstrap M2_Macro_Oil_vs_M3_Macro_Oil_RegQuality__primary__Oil_Rent_Intensive_Pre2016_ge1pct: 36 unit rows
+
+
+
+=== C:\Users\USER\Documents\python_codes\super_project\MS2_GitHub\Prediction_reg-inv_min-res\.venv\Scripts\python.exe C:\Users\USER\Documents\python_codes\super_project\MS2_GitHub\Prediction_reg-inv_min-res\04_pipeline\06_bootstrap_uncertainty.py --sample-id M2_Macro_Oil_vs_M3_Macro_Oil_RegQuality__primary__Oil_Rent_Intensive_Pre2016_ge5pct ===
+Completed bootstrap M2_Macro_Oil_vs_M3_Macro_Oil_RegQuality__primary__Oil_Rent_Intensive_Pre2016_ge5pct: 36 unit rows
+
+
+
+=== C:\Users\USER\Documents\python_codes\super_project\MS2_GitHub\Prediction_reg-inv_min-res\.venv\Scripts\python.exe C:\Users\USER\Documents\python_codes\super_project\MS2_GitHub\Prediction_reg-inv_min-res\04_pipeline\06_bootstrap_uncertainty.py --sample-id M2_Macro_Oil_vs_M3_Macro_Oil_RegQuality__primary__Oil_Rent_Intensive_Pre2016_ge10pct ===
+Completed bootstrap M2_Macro_Oil_vs_M3_Macro_Oil_RegQuality__primary__Oil_Rent_Intensive_Pre2016_ge10pct: 36 unit rows
+
+
+
+=== C:\Users\USER\Documents\python_codes\super_project\MS2_GitHub\Prediction_reg-inv_min-res\.venv\Scripts\python.exe C:\Users\USER\Documents\python_codes\super_project\MS2_GitHub\Prediction_reg-inv_min-res\04_pipeline\06_bootstrap_uncertainty.py --sample-id M2_Macro_Oil_vs_M3_Macro_Oil_RegQuality__primary__Oil_Rent_Intensive_Pre2016_ge15pct ===
+Completed bootstrap M2_Macro_Oil_vs_M3_Macro_Oil_RegQuality__primary__Oil_Rent_Intensive_Pre2016_ge15pct: 36 unit rows
+
+
+
+=== C:\Users\USER\Documents\python_codes\super_project\MS2_GitHub\Prediction_reg-inv_min-res\.venv\Scripts\python.exe C:\Users\USER\Documents\python_codes\super_project\MS2_GitHub\Prediction_reg-inv_min-res\04_pipeline\06_bootstrap_uncertainty.py --sample-id M2_Macro_Oil_vs_M3_Macro_Oil_RegQuality__normalized__All_Eligible ===
+Completed bootstrap M2_Macro_Oil_vs_M3_Macro_Oil_RegQuality__normalized__All_Eligible: 36 unit rows
+
+
+
+=== C:\Users\USER\Documents\python_codes\super_project\MS2_GitHub\Prediction_reg-inv_min-res\.venv\Scripts\python.exe C:\Users\USER\Documents\python_codes\super_project\MS2_GitHub\Prediction_reg-inv_min-res\04_pipeline\06_bootstrap_uncertainty.py --sample-id M2_Macro_Oil_vs_M3_Macro_Oil_RegQuality__normalized__Oil_Rent_Intensive_Pre2016_ge1pct ===
+Completed bootstrap M2_Macro_Oil_vs_M3_Macro_Oil_RegQuality__normalized__Oil_Rent_Intensive_Pre2016_ge1pct: 36 unit rows
+
+
+
+=== C:\Users\USER\Documents\python_codes\super_project\MS2_GitHub\Prediction_reg-inv_min-res\.venv\Scripts\python.exe C:\Users\USER\Documents\python_codes\super_project\MS2_GitHub\Prediction_reg-inv_min-res\04_pipeline\06_bootstrap_uncertainty.py --sample-id M2_Macro_Oil_vs_M3_Macro_Oil_RegQuality__normalized__Oil_Rent_Intensive_Pre2016_ge5pct ===
+Completed bootstrap M2_Macro_Oil_vs_M3_Macro_Oil_RegQuality__normalized__Oil_Rent_Intensive_Pre2016_ge5pct: 36 unit rows
+
+
+
+=== C:\Users\USER\Documents\python_codes\super_project\MS2_GitHub\Prediction_reg-inv_min-res\.venv\Scripts\python.exe C:\Users\USER\Documents\python_codes\super_project\MS2_GitHub\Prediction_reg-inv_min-res\04_pipeline\06_bootstrap_uncertainty.py --sample-id M2_Macro_Oil_vs_M3_Macro_Oil_RegQuality__normalized__Oil_Rent_Intensive_Pre2016_ge10pct ===
+Completed bootstrap M2_Macro_Oil_vs_M3_Macro_Oil_RegQuality__normalized__Oil_Rent_Intensive_Pre2016_ge10pct: 36 unit rows
+
+
+
+=== C:\Users\USER\Documents\python_codes\super_project\MS2_GitHub\Prediction_reg-inv_min-res\.venv\Scripts\python.exe C:\Users\USER\Documents\python_codes\super_project\MS2_GitHub\Prediction_reg-inv_min-res\04_pipeline\06_bootstrap_uncertainty.py --sample-id M2_Macro_Oil_vs_M3_Macro_Oil_RegQuality__normalized__Oil_Rent_Intensive_Pre2016_ge15pct ===
+Completed bootstrap M2_Macro_Oil_vs_M3_Macro_Oil_RegQuality__normalized__Oil_Rent_Intensive_Pre2016_ge15pct: 36 unit rows
+
+
+
+=== C:\Users\USER\Documents\python_codes\super_project\MS2_GitHub\Prediction_reg-inv_min-res\.venv\Scripts\python.exe C:\Users\USER\Documents\python_codes\super_project\MS2_GitHub\Prediction_reg-inv_min-res\04_pipeline\06_bootstrap_uncertainty.py --sample-id M2_Macro_Oil_vs_M3_Macro_Oil_RegQuality__raw_ratio_stress__All_Eligible ===
+Completed bootstrap M2_Macro_Oil_vs_M3_Macro_Oil_RegQuality__raw_ratio_stress__All_Eligible: 36 unit rows
+
+
+
+=== C:\Users\USER\Documents\python_codes\super_project\MS2_GitHub\Prediction_reg-inv_min-res\.venv\Scripts\python.exe C:\Users\USER\Documents\python_codes\super_project\MS2_GitHub\Prediction_reg-inv_min-res\04_pipeline\06_bootstrap_uncertainty.py --finalize ===
+
+
+
+=== C:\Users\USER\Documents\python_codes\super_project\MS2_GitHub\Prediction_reg-inv_min-res\.venv\Scripts\python.exe C:\Users\USER\Documents\python_codes\super_project\MS2_GitHub\Prediction_reg-inv_min-res\04_pipeline\06_bootstrap_uncertainty.py --null-check ===
+                 signal  null_permutations  bootstrap_replicates_per_permutation  pooled_null_draws  pooled_null_median_delta_r2  pooled_null_ci_low_delta_r2  pooled_null_ci_high_delta_r2  pooled_null_p_delta_r2_gt_0  expected_probability_under_null  absolute_distance_from_0p5                                                                      sanity_interpretation  zero_centered_pass  ci_crosses_zero_pass  no_manufactured_positive_evidence_pass  overall_null_signal_sanity_pass null_check_status                                                                                                                                                           interpretation
+ Oil_Rents_GDP_Pct_lag1                 20                                   500              10000                    -0.000122                    -0.001177                      0.000581                       0.3708                              0.5                      0.1292 Near 0.5 is expected; material deviation triggers review rather than automatic validation.                True                  True                                    True                             True PASS_WITH_CAUTION The null median is near zero and the 95% interval crosses zero, but P(Î”RÂ²>0) lies outside the Â±0.10 pass band while remaining within the predeclared Â±0.15 caution band.
+Regulatory_Quality_lag1                 20                                   500              10000                    -0.000054                    -0.001849                      0.001180                       0.4665                              0.5                      0.0335 Near 0.5 is expected; material deviation triggers review rather than automatic validation.                True                  True                                    True                             True              PASS                                     The null median is near zero, the 95% interval crosses zero, and P(Î”RÂ²>0) is within the predeclared Â±0.10 reference band around 0.5.
+
+Paired label-swap calibration
+                 signal  calibration_replicates  countries_N  median_delta_r2  ci_low_delta_r2  ci_high_delta_r2  p_delta_r2_gt_0  absolute_distance_from_0p5  all_replicates_exact_N_draws                                       calibration_interpretation
+ Oil_Rents_GDP_Pct_lag1                   10000          185        -0.000070        -0.013838          0.013499           0.4954                      0.0046                          True Paired label-swap symmetry check; P(delta>0) should be near 0.5.
+Regulatory_Quality_lag1                   10000          184         0.000018        -0.003550          0.003537           0.5040                      0.0040                          True Paired label-swap symmetry check; P(delta>0) should be near 0.5.
+
+
+
+=== C:\Users\USER\Documents\python_codes\super_project\MS2_GitHub\Prediction_reg-inv_min-res\.venv\Scripts\python.exe C:\Users\USER\Documents\python_codes\super_project\MS2_GitHub\Prediction_reg-inv_min-res\04_pipeline\06_generate_decisions_and_coverage.py ===
+                 signal      target_role                            target                           universe  country_median_delta_r2  country_positive_share  country_increment_comparisons  country_median_delta_mae  future_aggregate_median_delta_r2  future_aggregate_positive_share  country_median_model_minus_benchmark_r2  country_benchmark_positive_share  country_benchmark_comparisons  future_aggregate_median_model_minus_benchmark_r2  future_aggregate_benchmark_positive_share  future_cutoffs_tested  future_cutoffs_supported  future_cutoff_supported_share  future_any_increment_supported  future_any_benchmark_supported  future_min_median_delta_r2  future_max_median_delta_r2      universe_type  universe_threshold  country_years  countries  nigeria_included                                      setup_verdict
+ Oil_Rents_GDP_Pct_lag1       normalized Inward_FDI_Net_Flow_GDP_Pct_asinh  Oil_Rent_Intensive_Pre2016_ge1pct                 0.013880                0.866667                             15                  0.001980                      1.093118e-02                         1.000000                                 0.143058                          1.000000                             15                                          0.206433                                   1.000000                      5                         5                            1.0                            True                            True                8.262969e-03                    0.015850 oil_rent_threshold                 1.0           1689         69              True Evidence-supported across country and cutoff tests
+ Oil_Rents_GDP_Pct_lag1       normalized Inward_FDI_Net_Flow_GDP_Pct_asinh  Oil_Rent_Intensive_Pre2016_ge5pct                 0.001358                0.600000                             15                 -0.000136                      5.095716e-03                         0.800000                                 0.114707                          0.933333                             15                                          0.189513                                   1.000000                      5                         5                            1.0                            True                            True                3.581692e-03                    0.009071 oil_rent_threshold                 5.0           1076         45              True Evidence-supported across country and cutoff tests
+ Oil_Rents_GDP_Pct_lag1       normalized Inward_FDI_Net_Flow_GDP_Pct_asinh Oil_Rent_Intensive_Pre2016_ge10pct                 0.006063                0.666667                             15                 -0.007319                      2.952173e-03                         0.866667                                 0.103952                          0.933333                             15                                          0.206554                                   1.000000                      5                         5                            1.0                            True                            True                1.755823e-03                    0.005008 oil_rent_threshold                10.0            776         34              True Evidence-supported across country and cutoff tests
+ Oil_Rents_GDP_Pct_lag1       normalized Inward_FDI_Net_Flow_GDP_Pct_asinh Oil_Rent_Intensive_Pre2016_ge15pct                 0.001611                0.666667                             15                 -0.001608                      1.556460e-03                         0.933333                                 0.123573                          0.933333                             15                                          0.144315                                   0.933333                      5                         5                            1.0                            True                            True                1.103261e-03                    0.003074 oil_rent_threshold                15.0            679         30              True Evidence-supported across country and cutoff tests
+ Oil_Rents_GDP_Pct_lag1       normalized Inward_FDI_Net_Flow_GDP_Pct_asinh                       All_Eligible                 0.004326                0.733333                             15                 -0.003219                      5.859182e-03                         0.933333                                 0.143151                          1.000000                             15                                          0.203575                                   1.000000                      5                         5                            1.0                            True                            True                4.697636e-03                    0.009320                all                 NaN           4734        185              True Evidence-supported across country and cutoff tests
+ Oil_Rents_GDP_Pct_lag1          primary         Inward_FDI_Net_Flow_asinh  Oil_Rent_Intensive_Pre2016_ge1pct                 0.019777                0.933333                             15                  0.016989                      1.166099e-02                         0.933333                                 0.230926                          1.000000                             15                                          0.190291                                   1.000000                      5                         5                            1.0                            True                            True                1.025989e-02                    0.016363 oil_rent_threshold                 1.0           1690         69              True Evidence-supported across country and cutoff tests
+ Oil_Rents_GDP_Pct_lag1          primary         Inward_FDI_Net_Flow_asinh  Oil_Rent_Intensive_Pre2016_ge5pct                 0.008259                0.666667                             15                  0.012225                      2.442848e-03                         0.733333                                 0.130214                          1.000000                             15                                          0.162185                                   1.000000                      5                         5                            1.0                            True                            True                1.241244e-03                    0.008183 oil_rent_threshold                 5.0           1077         45              True Evidence-supported across country and cutoff tests
+ Oil_Rents_GDP_Pct_lag1          primary         Inward_FDI_Net_Flow_asinh Oil_Rent_Intensive_Pre2016_ge10pct                 0.006873                0.666667                             15                  0.004156                     -1.669397e-05                         0.466667                                 0.097960                          0.933333                             15                                          0.180496                                   1.000000                      5                         3                            0.6                            True                            True               -8.166529e-04                    0.005295 oil_rent_threshold                10.0            777         34              True Evidence-supported across country and cutoff tests
+ Oil_Rents_GDP_Pct_lag1          primary         Inward_FDI_Net_Flow_asinh Oil_Rent_Intensive_Pre2016_ge15pct                -0.000672                0.466667                             15                  0.001453                     -4.514762e-03                         0.266667                                 0.110895                          0.933333                             15                                          0.055487                                   0.933333                      5                         1                            0.2                            True                            True               -6.563009e-03                    0.000763 oil_rent_threshold                15.0            680         30              True            Conditional/validation-cutoff-dependent
+ Oil_Rents_GDP_Pct_lag1          primary         Inward_FDI_Net_Flow_asinh                       All_Eligible                 0.009883                1.000000                             15                  0.009161                      7.849970e-03                         1.000000                                 0.250881                          1.000000                             15                                          0.261849                                   1.000000                      5                         5                            1.0                            True                            True                7.526278e-03                    0.011441                all                 NaN           4735        185              True Evidence-supported across country and cutoff tests
+ Oil_Rents_GDP_Pct_lag1 raw_ratio_stress       Inward_FDI_Net_Flow_GDP_Pct                       All_Eligible                -0.000040                0.466667                             15                  0.012423                      9.214896e-05                         0.600000                                 0.069857                          0.733333                             15                                         -0.152228                                   0.400000                      5                         2                            0.4                            True                            True               -1.057238e-03                    0.000308                all                 NaN           4734        185              True            Conditional/validation-cutoff-dependent
+Regulatory_Quality_lag1       normalized Inward_FDI_Net_Flow_GDP_Pct_asinh  Oil_Rent_Intensive_Pre2016_ge1pct                 0.000258                0.533333                             15                 -0.002675                      1.277262e-03                         0.733333                                 0.154253                          1.000000                             15                                          0.206023                                   1.000000                      5                         4                            0.8                            True                            True               -1.220114e-08                    0.001764 oil_rent_threshold                 1.0           1390         69              True            Conditional/validation-cutoff-dependent
+Regulatory_Quality_lag1       normalized Inward_FDI_Net_Flow_GDP_Pct_asinh  Oil_Rent_Intensive_Pre2016_ge5pct                 0.000214                0.533333                             15                 -0.000905                      9.233359e-04                         0.800000                                 0.075824                          0.800000                             15                                          0.185567                                   1.000000                      5                         5                            1.0                            True                            True                4.962769e-04                    0.002187 oil_rent_threshold                 5.0            892         45              True            Conditional/validation-cutoff-dependent
+Regulatory_Quality_lag1       normalized Inward_FDI_Net_Flow_GDP_Pct_asinh Oil_Rent_Intensive_Pre2016_ge10pct                -0.000850                0.333333                             15                  0.000000                      4.264040e-04                         0.600000                                 0.126253                          0.933333                             15                                          0.201321                                   1.000000                      5                         3                            0.6                            True                            True               -5.104030e-04                    0.000813 oil_rent_threshold                10.0            654         34              True            Conditional/validation-cutoff-dependent
+Regulatory_Quality_lag1       normalized Inward_FDI_Net_Flow_GDP_Pct_asinh Oil_Rent_Intensive_Pre2016_ge15pct                -0.002792                0.266667                             15                  0.002833                     -2.072558e-03                         0.266667                                 0.070621                          0.933333                             15                                          0.133419                                   1.000000                      5                         1                            0.2                            True                            True               -2.977177e-03                    0.000007 oil_rent_threshold                15.0            570         30              True            Conditional/validation-cutoff-dependent
+Regulatory_Quality_lag1       normalized Inward_FDI_Net_Flow_GDP_Pct_asinh                       All_Eligible                 0.007381                0.733333                             15                 -0.005232                      5.722403e-03                         0.800000                                 0.152769                          1.000000                             15                                          0.229313                                   1.000000                      5                         5                            1.0                            True                            True                5.403359e-03                    0.006270                all                 NaN           3828        184              True Evidence-supported across country and cutoff tests
+Regulatory_Quality_lag1          primary         Inward_FDI_Net_Flow_asinh  Oil_Rent_Intensive_Pre2016_ge1pct                 0.002752                0.800000                             15                 -0.009775                     -2.721063e-07                         0.466667                                 0.149381                          1.000000                             15                                          0.185515                                   1.000000                      5                         2                            0.4                            True                            True               -2.235887e-03                    0.001956 oil_rent_threshold                 1.0           1391         69              True            Conditional/validation-cutoff-dependent
+Regulatory_Quality_lag1          primary         Inward_FDI_Net_Flow_asinh  Oil_Rent_Intensive_Pre2016_ge5pct                 0.003076                0.666667                             15                 -0.014321                      1.457345e-03                         0.866667                                 0.094463                          0.866667                             15                                          0.151744                                   1.000000                      5                         5                            1.0                            True                            True                6.834247e-04                    0.001952 oil_rent_threshold                 5.0            893         45              True Evidence-supported across country and cutoff tests
+Regulatory_Quality_lag1          primary         Inward_FDI_Net_Flow_asinh Oil_Rent_Intensive_Pre2016_ge10pct                 0.001615                0.600000                             15                 -0.009032                      1.355861e-03                         0.866667                                 0.056930                          0.733333                             15                                          0.158783                                   1.000000                      5                         5                            1.0                            True                            True                5.885219e-04                    0.002113 oil_rent_threshold                10.0            655         34              True Evidence-supported across country and cutoff tests
+Regulatory_Quality_lag1          primary         Inward_FDI_Net_Flow_asinh Oil_Rent_Intensive_Pre2016_ge15pct                -0.001492                0.266667                             15                  0.014187                     -8.479335e-04                         0.133333                                 0.088095                          0.800000                             15                                          0.036765                                   0.800000                      5                         0                            0.0                           False                            True               -3.459176e-03                   -0.000041 oil_rent_threshold                15.0            571         30              True    Model competitive; signal increment unsupported
+Regulatory_Quality_lag1          primary         Inward_FDI_Net_Flow_asinh                       All_Eligible                 0.003623                0.666667                             15                 -0.012265                      2.573001e-03                         0.733333                                 0.220990                          1.000000                             15                                          0.256166                                   1.000000                      5                         5                            1.0                            True                            True                2.353407e-03                    0.003043                all                 NaN           3829        184              True Evidence-supported across country and cutoff tests
+Regulatory_Quality_lag1 raw_ratio_stress       Inward_FDI_Net_Flow_GDP_Pct                       All_Eligible                -0.001385                0.466667                             15                  0.066551                      4.140854e-04                         0.800000                                 0.034178                          0.666667                             15                                         -0.154476                                   0.466667                      5                         2                            0.4                            True                            True               -1.776053e-03                    0.000459                all                 NaN           3828        184              True            Conditional/validation-cutoff-dependent
+
+Preliminary signal classifications
+                 signal                                                       final_preliminary_classification  decision_setups_total  decision_setups_eligible  evidence_supported_setups  conditional_setups  not_supported_setups  coverage_limited_setups  raw_ratio_stress_test_excluded_from_classification
+ Oil_Rents_GDP_Pct_lag1 Conditionally admissible; verdict depends on target, threshold, or validation geometry                     10                        10                          9                   1                     0                        0                                                True
+Regulatory_Quality_lag1 Conditionally admissible; verdict depends on target, threshold, or validation geometry                     10                        10                          4                   5                     0                        0                                                True
+
+
+
+=== C:\Users\USER\Documents\python_codes\super_project\MS2_GitHub\Prediction_reg-inv_min-res\.venv\Scripts\python.exe C:\Users\USER\Documents\python_codes\super_project\MS2_GitHub\Prediction_reg-inv_min-res\04_pipeline\08_persistence_baseline_forensics.py ===
+                          series                                         series_role           source scale             scale_definition         sample                         estimand  persistence_r2  observations  countries  folds_used predictor  model_fitted
+       Corrected_Annual_Net_Flow Decision-bearing primary target (BX.KLT.DINV.CD.WD)  corrected_panel asinh signed asinh of US$ millions  all_available              country_fold_median        0.188470          6413        202           5    y[t-1]         False
+       Corrected_Annual_Net_Flow Decision-bearing primary target (BX.KLT.DINV.CD.WD)  corrected_panel asinh signed asinh of US$ millions  all_available pooled_consecutive_country_years        0.198852          6413        202           0    y[t-1]         False
+       Corrected_Annual_Net_Flow Decision-bearing primary target (BX.KLT.DINV.CD.WD)  corrected_panel   raw                 US$ millions  all_available              country_fold_median        0.346818          6413        202           5    y[t-1]         False
+       Corrected_Annual_Net_Flow Decision-bearing primary target (BX.KLT.DINV.CD.WD)  corrected_panel   raw                 US$ millions  all_available pooled_consecutive_country_years        0.541215          6413        202           0    y[t-1]         False
+       Corrected_Annual_Net_Flow Decision-bearing primary target (BX.KLT.DINV.CD.WD)  corrected_panel asinh signed asinh of US$ millions common_support              country_fold_median       -0.107327          2321         92           5    y[t-1]         False
+       Corrected_Annual_Net_Flow Decision-bearing primary target (BX.KLT.DINV.CD.WD)  corrected_panel asinh signed asinh of US$ millions common_support pooled_consecutive_country_years       -0.159115          2321         92           0    y[t-1]         False
+       Corrected_Annual_Net_Flow Decision-bearing primary target (BX.KLT.DINV.CD.WD)  corrected_panel   raw                 US$ millions common_support              country_fold_median        0.321973          2321         92           5    y[t-1]         False
+       Corrected_Annual_Net_Flow Decision-bearing primary target (BX.KLT.DINV.CD.WD)  corrected_panel   raw                 US$ millions common_support pooled_consecutive_country_years        0.567142          2321         92           0    y[t-1]         False
+Legacy_Stock_Mislabelled_As_Flow     Legacy target retained as forensic exhibit only forensic_archive asinh signed asinh of US$ millions  all_available              country_fold_median        0.985612          2341         92           5    y[t-1]         False
+Legacy_Stock_Mislabelled_As_Flow     Legacy target retained as forensic exhibit only forensic_archive asinh signed asinh of US$ millions  all_available pooled_consecutive_country_years        0.987088          2341         92           0    y[t-1]         False
+Legacy_Stock_Mislabelled_As_Flow     Legacy target retained as forensic exhibit only forensic_archive   raw                 US$ millions  all_available              country_fold_median        0.970453          2341         92           5    y[t-1]         False
+Legacy_Stock_Mislabelled_As_Flow     Legacy target retained as forensic exhibit only forensic_archive   raw                 US$ millions  all_available pooled_consecutive_country_years        0.969999          2341         92           0    y[t-1]         False
+Legacy_Stock_Mislabelled_As_Flow     Legacy target retained as forensic exhibit only forensic_archive asinh signed asinh of US$ millions common_support              country_fold_median        0.985612          2321         92           5    y[t-1]         False
+Legacy_Stock_Mislabelled_As_Flow     Legacy target retained as forensic exhibit only forensic_archive asinh signed asinh of US$ millions common_support pooled_consecutive_country_years        0.986927          2321         92           0    y[t-1]         False
+Legacy_Stock_Mislabelled_As_Flow     Legacy target retained as forensic exhibit only forensic_archive   raw                 US$ millions common_support              country_fold_median        0.970453          2321         92           5    y[t-1]         False
+Legacy_Stock_Mislabelled_As_Flow     Legacy target retained as forensic exhibit only forensic_archive   raw                 US$ millions common_support pooled_consecutive_country_years        0.969982          2321         92           0    y[t-1]         False
+
+Like-for-like headline contrasts
+scale         sample                         estimand  legacy_stock_persistence_r2  corrected_flow_persistence_r2  absolute_drop  like_for_like                                                                                                        interpretation
+asinh  all_available pooled_consecutive_country_years                     0.987088                       0.198852       0.788236           True Same transform, same sample, same estimand; the contrast is attributable to the series, not to the evaluation choice.
+asinh  all_available              country_fold_median                     0.985612                       0.188470       0.797142           True Same transform, same sample, same estimand; the contrast is attributable to the series, not to the evaluation choice.
+asinh common_support pooled_consecutive_country_years                     0.986927                      -0.159115       1.146042           True Same transform, same sample, same estimand; the contrast is attributable to the series, not to the evaluation choice.
+asinh common_support              country_fold_median                     0.985612                      -0.107327       1.092939           True Same transform, same sample, same estimand; the contrast is attributable to the series, not to the evaluation choice.
+
+
+
+=== C:\Users\USER\Documents\python_codes\super_project\MS2_GitHub\Prediction_reg-inv_min-res\.venv\Scripts\python.exe C:\Users\USER\Documents\python_codes\super_project\MS2_GitHub\Prediction_reg-inv_min-res\04_pipeline\07_integrate_bootstrap_verdicts.py ===
+                 signal      target_role                           universe                       setup_verdict
+ Oil_Rents_GDP_Pct_lag1       normalized  Oil_Rent_Intensive_Pre2016_ge1pct  Supported and practically material
+ Oil_Rents_GDP_Pct_lag1       normalized  Oil_Rent_Intensive_Pre2016_ge5pct Directionally positive but marginal
+ Oil_Rents_GDP_Pct_lag1       normalized Oil_Rent_Intensive_Pre2016_ge10pct                     Setup-dependent
+ Oil_Rents_GDP_Pct_lag1       normalized Oil_Rent_Intensive_Pre2016_ge15pct                     Setup-dependent
+ Oil_Rents_GDP_Pct_lag1       normalized                       All_Eligible Directionally positive but marginal
+ Oil_Rents_GDP_Pct_lag1          primary  Oil_Rent_Intensive_Pre2016_ge1pct Directionally positive but marginal
+ Oil_Rents_GDP_Pct_lag1          primary  Oil_Rent_Intensive_Pre2016_ge5pct                     Setup-dependent
+ Oil_Rents_GDP_Pct_lag1          primary Oil_Rent_Intensive_Pre2016_ge10pct                     Setup-dependent
+ Oil_Rents_GDP_Pct_lag1          primary Oil_Rent_Intensive_Pre2016_ge15pct                     Setup-dependent
+ Oil_Rents_GDP_Pct_lag1          primary                       All_Eligible Directionally positive but marginal
+ Oil_Rents_GDP_Pct_lag1 raw_ratio_stress                       All_Eligible                     Setup-dependent
+Regulatory_Quality_lag1       normalized  Oil_Rent_Intensive_Pre2016_ge1pct                     Setup-dependent
+Regulatory_Quality_lag1       normalized  Oil_Rent_Intensive_Pre2016_ge5pct                     Setup-dependent
+Regulatory_Quality_lag1       normalized Oil_Rent_Intensive_Pre2016_ge10pct                     Setup-dependent
+Regulatory_Quality_lag1       normalized Oil_Rent_Intensive_Pre2016_ge15pct                     Setup-dependent
+Regulatory_Quality_lag1       normalized                       All_Eligible                     Setup-dependent
+Regulatory_Quality_lag1          primary  Oil_Rent_Intensive_Pre2016_ge1pct                     Setup-dependent
+Regulatory_Quality_lag1          primary  Oil_Rent_Intensive_Pre2016_ge5pct                     Setup-dependent
+Regulatory_Quality_lag1          primary Oil_Rent_Intensive_Pre2016_ge10pct                     Setup-dependent
+Regulatory_Quality_lag1          primary Oil_Rent_Intensive_Pre2016_ge15pct                     Setup-dependent
+Regulatory_Quality_lag1          primary                       All_Eligible                     Setup-dependent
+Regulatory_Quality_lag1 raw_ratio_stress                       All_Eligible                     Setup-dependent
+
+Cross-setup classifications
+                 signal  decision_setups  material_setups  marginal_setups  setup_dependent_setups  unsupported_setups  coverage_limited_setups cross_setup_classification                                                                                                                         interpretation_guardrail
+ Oil_Rents_GDP_Pct_lag1               10                1                4                       5                   0                        0            Setup-dependent Classification reads the complete prespecified setup pattern; no single setup with a confidence interval excluding zero controls the conclusion.
+Regulatory_Quality_lag1               10                0                0                      10                   0                        0            Setup-dependent Classification reads the complete prespecified setup pattern; no single setup with a confidence interval excluding zero controls the conclusion.
+
+
+
+=== C:\Users\USER\Documents\python_codes\super_project\MS2_GitHub\Prediction_reg-inv_min-res\.venv\Scripts\python.exe C:\Users\USER\Documents\python_codes\super_project\MS2_GitHub\Prediction_reg-inv_min-res\04_pipeline\09_generate_manuscript_reporting.py ===
+Generated V0.4.3 manuscript-reporting outputs.
+
+
+
+=== C:\Users\USER\Documents\python_codes\super_project\MS2_GitHub\Prediction_reg-inv_min-res\.venv\Scripts\python.exe C:\Users\USER\Documents\python_codes\super_project\MS2_GitHub\Prediction_reg-inv_min-res\04_pipeline\07_verify_deterministic_rerun.py ===
+PASS: two deterministic derivations from the included raw workbooks produced byte-identical processed data, locked samples/folds, and corrected outputs (209/209 files).
+
+
+
+=== C:\Users\USER\Documents\python_codes\super_project\MS2_GitHub\Prediction_reg-inv_min-res\.venv\Scripts\python.exe C:\Users\USER\Documents\python_codes\super_project\MS2_GitHub\Prediction_reg-inv_min-res\04_pipeline\07_build_reproducibility_report.py ===
+# Reproducibility report â€” release V0.4.3
+
+## Build status
+
+- Raw source validation: 10/10 files passed.
+- Corrected panel: 7,595 country-year rows, 217 economies, 1990-2024.
+- Verified annual FDI-flow observations: 6,635.
+- Negative annual FDI-flow observations retained: 504.
+- Nigeria annual-flow observations: 35.
+- Setup-specific verdict rows: 22.
+- Future-cutoff sensitivity rows: 110 across five prespecified cutoffs.
+- Oil-rent-threshold sensitivity rows: 16 across 1%, 5%, 10%, and 15% pre-2016 maximum-rent thresholds.
+- Signal-level preliminary classifications: 2.
+- Deterministic rerun verification: PASS: two deterministic derivations from the included raw workbooks produced byte-identical processed data, locked samples/folds, and corrected outputs (209/209 files).
+
+## Four robustness issues closed
+
+1. **Extreme raw flow/GDP folds.** The untransformed percentage ratio is retained as a stress test, not as the decision-bearing robustness target. The signed `asinh(flow/GDP)` target is the principal normalized outcome. Its worst split-level R2 is 0.078, compared with -39.910 for the raw ratio. Extreme observations and prediction spans are exported explicitly.
+2. **Future-period cutoff sensitivity.** Five cutoffs are prespecified: 2012/2013, 2014/2015, 2015/2016, 2016/2017, and 2018/2019. Setup decisions use the share of cutoffs that independently satisfy the incremental and benchmark rules.
+3. **Oil-rent threshold sensitivity.** The 5% subgroup is no longer treated as uniquely authoritative. The same analysis is repeated at 1%, 5%, 10%, and 15% thresholds, all defined from the 1990-2015 classification window.
+4. **Sector-alignment limitation.** Aggregate FDI is explicitly defined as a national investment-context outcome. The paper and repository prohibit claims that it directly measures petroleum- or mining-sector investment. The standalone scope is resource-rich economies, not sector-specific investment prediction.
+
+## Pipeline invariants
+
+1. Corrected results use only the official World Bank workbooks in `01_raw_data/world_bank`.
+2. The forensic archive is never imported by corrected data construction or modelling; it is read only to quantify legacy defects.
+3. Target names preserve flow, normalized flow, and raw-ratio stress-test distinctions.
+4. Negative annual flows are retained.
+5. No corrected target is clipped.
+6. Predictors are lagged only across consecutive country-years.
+7. ISO3-to-fold assignments are persisted before modelling.
+8. Every incremental comparison uses a saved common country-year sample.
+9. Missing core features stop the run.
+10. Added models are compared with the strongest prespecified naive benchmark on the same split.
+11. Future-cutoff and oil-rent-threshold sensitivity grids are declared in configuration before modelling.
+12. Exact package versions, inputs, code, samples, and outputs are checksum-locked.
+
+## Scientific status
+
+The V0.4.3 release is suitable for scientific interpretation of setup-dependent signal admissibility, subject to the conditional-bootstrap estimand and correlated-setup caveats below. The raw flow/GDP ratio remains available as an intentionally harsh leverage stress test but is excluded from final admissibility classification. Final classifications are based only on the transformed annual-flow level and transformed normalized-flow targets.
+
+
+## Bootstrap estimand
+
+The paired country-cluster bootstrap resamples countries from frozen out-of-fold or future-period country contributions. Each selected country contributes its complete held-out block of years, and the same country multiplicities are applied to the baseline and added-signal models within each replicate. The intervals therefore quantify uncertainty associated with the composition of the evaluated country population, conditional on the fitted models and frozen predictions. They do not include model-refitting variability and may be narrower than total training-and-sampling uncertainty intervals.
+
+## Material-cell qualification
+
+Two oil-rent setups in the pre-2016 >=1% universe meet the prespecified materiality rule. They are treated as supportive components of the complete cross-setup pattern, not as independent confirmatory replications, because the setups are correlated, their lower uncertainty bounds are close to zero, and their intervals are conditional on fixed predictions. The material category is not required to be populated for the paper's conclusion.
+
+## Scope limitation
+
+Aggregate inward FDI captures the national investment environment. It does not identify petroleum, mining, tar-sand, or extractive-project investment. Findings must therefore be framed as evidence about candidate signals for decision support in resource-rich economies, not as direct prediction of resource-sector capital flows.
+
+
+
+
+MS2 clean pipeline run completed: 2026-07-24T06:51:07.610629+00:00

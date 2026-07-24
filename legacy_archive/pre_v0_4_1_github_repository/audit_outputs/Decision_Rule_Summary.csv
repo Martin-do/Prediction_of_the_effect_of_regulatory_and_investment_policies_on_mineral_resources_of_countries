@@ -1,0 +1,6 @@
+Pattern,Interpretation,Observed
+Governance improves FDI prediction after GDP + oil-rent controls,Strong empirical anchor for governance thesis,No
+Governance works only without GDP controls (M2>M4 or M2>M3),Market-size confounding — weaker result,No
+Oil rents predict FDI but governance does not add value (M3≈M4),Resource-pull story — not a governance story,No
+Nothing beats dummy baseline (M4 R²<0),Clean null — thesis shifts to decision-support framing,No
+Governance predicts FDI/GDP but not arcsinh FDI,Investment-intensity story — narrower but still publishable,Check Table3b

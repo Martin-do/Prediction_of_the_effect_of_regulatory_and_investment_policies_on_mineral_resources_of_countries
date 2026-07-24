@@ -1,0 +1,7 @@
+Variable,Description,N_obs,Mean,Std,Min,Median,Max,Pct_zero,Pct_neg
+Mineral_Rents_GDP_Percent,"Original target (metals rents, excl. oil/gas/coal)",6417,0.6818,2.2524,0.0,0.0011,35.2518,46.2,0.0
+Oil_Rents_GDP_Percent,Corrected resource base (oil rents) — main signal,6054,3.5084,9.1715,0.0,0.0104,82.7769,42.7,0.0
+Total_NR_Rents_GDP_Percent,Robustness resource base (total NR rents),6395,6.6081,10.7533,0.0,1.6885,88.5923,9.3,0.0
+FDI_Flows_Millions_USD,FDI inflows raw USD millions,2435,159937.7277,589496.4209,9.0,20733.0,13085709.0,0.0,0.0
+FDI_asinh,FDI inflows — arcsinh transform  [PRIMARY TARGET],2435,10.5232,2.3493,2.8934,10.6326,17.0802,0.0,0.0
+FDI_GDP_Pct,FDI / GDP × 100  [ROBUSTNESS TARGET],2435,41.5146,38.855,0.3578,31.4893,200.0,0.0,0.0

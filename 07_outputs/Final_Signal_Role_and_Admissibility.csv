@@ -1,0 +1,6 @@
+variable_or_block,decision_role,five_way_classification,interpretation
+Core macroeconomic block,Predictive control block,Not classified as a candidate weighted signal,"GDP, population, inflation and electricity access define the control baseline; predictive usefulness does not automatically justify normative weighting."
+Oil_Rents_GDP_Pct_lag1,Candidate pre-weighting signal,Setup-dependent,"Read across all prespecified targets, universes, algorithms and validation geometries; no single favourable setup controls the classification."
+Regulatory_Quality_lag1,Candidate pre-weighting signal,Setup-dependent,"Read across all prespecified targets, universes, algorithms and validation geometries; no single favourable setup controls the classification."
+CPI and restricted policy indicators,Appendix sensitivity variables,Coverage-limited,Not admitted to the core ladder without traceable provenance and adequate country-time support.
+Legacy inward FDI stock target,Forensic exhibit only,Unsupported,Not admissible as an annual-flow outcome; retained solely to document target-provenance failure.

@@ -1,0 +1,1 @@
+PASS: two deterministic derivations from the included raw workbooks produced byte-identical processed data, locked samples/folds, and corrected outputs (209/209 files).

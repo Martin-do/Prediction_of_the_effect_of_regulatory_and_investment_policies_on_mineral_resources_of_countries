@@ -1,0 +1,2 @@
+scale,decision_setups,material_setups,marginal_setups,setup_dependent_setups,unsupported_setups,coverage_limited_setups,overall_classification,status
+WGI governance score (0-100),10,0,0,10,0,0,Setup-dependent,Post hoc sensitivity; not part of frozen primary classification

@@ -1,0 +1,201 @@
+{
+  "release": "V0.4.3-posthoc-RQ-two-scale-sensitivity",
+  "analysis_year_min": 1990,
+  "analysis_year_max": 2024,
+  "lag_years": 1,
+  "country_folds": 5,
+  "fold_hash_salt": "MS2-BEFORE-THE-WEIGHTS-20260713",
+  "random_seed": 20260713,
+  "future_cutoffs": [
+    {
+      "train_end": 2012,
+      "test_start": 2013
+    },
+    {
+      "train_end": 2014,
+      "test_start": 2015
+    },
+    {
+      "train_end": 2015,
+      "test_start": 2016
+    },
+    {
+      "train_end": 2016,
+      "test_start": 2017
+    },
+    {
+      "train_end": 2018,
+      "test_start": 2019
+    }
+  ],
+  "reference_future_cutoff": {
+    "train_end": 2015,
+    "test_start": 2016
+  },
+  "oil_rent_classification_end_year": 2015,
+  "oil_rent_thresholds_pct_gdp": [
+    1.0,
+    5.0,
+    10.0,
+    15.0
+  ],
+  "reference_oil_rent_threshold_pct_gdp": 5.0,
+  "targets": {
+    "primary": "Inward_FDI_Net_Flow_asinh",
+    "normalized": "Inward_FDI_Net_Flow_GDP_Pct_asinh",
+    "raw_ratio_stress": "Inward_FDI_Net_Flow_GDP_Pct"
+  },
+  "feature_sets": {
+    "M1_Macro": [
+      "__TARGET_LAG1__",
+      "GDP_log_lag1",
+      "Population_log_lag1",
+      "Inflation_CPI_Annual_Pct_lag1",
+      "Electricity_Access_Pct_lag1"
+    ],
+    "M2_Macro_Oil": [
+      "__TARGET_LAG1__",
+      "GDP_log_lag1",
+      "Population_log_lag1",
+      "Inflation_CPI_Annual_Pct_lag1",
+      "Electricity_Access_Pct_lag1",
+      "Oil_Rents_GDP_Pct_lag1"
+    ],
+    "M3_Macro_Oil_RegQuality": [
+      "__TARGET_LAG1__",
+      "GDP_log_lag1",
+      "Population_log_lag1",
+      "Inflation_CPI_Annual_Pct_lag1",
+      "Electricity_Access_Pct_lag1",
+      "Oil_Rents_GDP_Pct_lag1",
+      "Regulatory_Quality_lag1"
+    ],
+    "M3_Macro_Oil_RegQuality_Score": [
+      "__TARGET_LAG1__",
+      "GDP_log_lag1",
+      "Population_log_lag1",
+      "Inflation_CPI_Annual_Pct_lag1",
+      "Electricity_Access_Pct_lag1",
+      "Oil_Rents_GDP_Pct_lag1",
+      "Regulatory_Quality_Score_lag1"
+    ]
+  },
+  "comparisons": [
+    {
+      "signal": "Oil_Rents_GDP_Pct_lag1",
+      "base_model": "M1_Macro",
+      "added_model": "M2_Macro_Oil"
+    },
+    {
+      "signal": "Regulatory_Quality_lag1",
+      "base_model": "M2_Macro_Oil",
+      "added_model": "M3_Macro_Oil_RegQuality"
+    },
+    {
+      "signal": "Regulatory_Quality_Score_lag1",
+      "base_model": "M2_Macro_Oil",
+      "added_model": "M3_Macro_Oil_RegQuality_Score"
+    }
+  ],
+  "universes": [
+    {
+      "name": "All_Eligible",
+      "type": "all"
+    },
+    {
+      "name": "Oil_Rent_Intensive_Pre2016_ge1pct",
+      "type": "oil_rent_threshold",
+      "threshold": 1.0
+    },
+    {
+      "name": "Oil_Rent_Intensive_Pre2016_ge5pct",
+      "type": "oil_rent_threshold",
+      "threshold": 5.0
+    },
+    {
+      "name": "Oil_Rent_Intensive_Pre2016_ge10pct",
+      "type": "oil_rent_threshold",
+      "threshold": 10.0
+    },
+    {
+      "name": "Oil_Rent_Intensive_Pre2016_ge15pct",
+      "type": "oil_rent_threshold",
+      "threshold": 15.0
+    }
+  ],
+  "algorithms": [
+    "Ridge",
+    "ElasticNet",
+    "RandomForest"
+  ],
+  "admissibility_rule": {
+    "minimum_positive_share": 0.6,
+    "minimum_median_delta_r2": 0.0,
+    "minimum_countries": 25,
+    "minimum_country_years": 150,
+    "minimum_future_cutoff_support_share": 0.6
+  },
+  "raw_ratio_extreme_thresholds_pct": [
+    25.0,
+    50.0,
+    100.0
+  ],
+  "deterministic_execution": {
+    "threads": 1,
+    "python_hash_seed": 0
+  },
+  "decision_target_roles": [
+    "primary",
+    "normalized"
+  ],
+  "core_feature_decisions": {
+    "GDP_per_capita": "excluded_to_avoid_mechanical_redundancy_with_GDP_and_population",
+    "Trade_GDP_Pct": "optional_only_due_observability_gaps_in_restored_resource_economies",
+    "GDP_Growth_Annual_Pct": "optional_only_to_keep_core_ladder_parsimonious_and_maximize_common_sample",
+    "CPI_Score": "deferred_appendix_only_until_raw_source_and_provenance_are_available"
+  },
+  "bootstrap": {
+    "seed": 20260714,
+    "replicates": 2000,
+    "threshold_min": -0.02,
+    "threshold_max": 0.03,
+    "threshold_step": 0.0005,
+    "practical_thresholds_delta_r2": [
+      0.0,
+      0.0025,
+      0.005,
+      0.01
+    ],
+    "material_threshold_delta_r2": 0.005,
+    "directional_probability": 0.8,
+    "material_probability": 0.8,
+    "ci_level": 0.95,
+    "minimum_countries": 25,
+    "minimum_rows": 150,
+    "null_signal": {
+      "seed": 20260715,
+      "permutations": 20,
+      "bootstrap_replicates_per_permutation": 500,
+      "target_role": "primary",
+      "universe": "All_Eligible",
+      "validation": "Country_Holdout_CV",
+      "algorithm": "Ridge",
+      "permutation_method": "within_year_row_permutation_separately_in_train_and_test",
+      "median_zero_tolerance_delta_r2": 0.001,
+      "probability_pass_tolerance_from_0p5": 0.1,
+      "probability_caution_tolerance_from_0p5": 0.15
+    }
+  },
+  "five_way_verdict_scheme": [
+    "Supported and practically material",
+    "Directionally positive but marginal",
+    "Setup-dependent",
+    "Unsupported",
+    "Coverage-limited"
+  ],
+  "posthoc_sensitivity": {
+    "purpose": "Compare WGI Regulatory Quality governance estimate with the alternative 0-100 score from the same frozen 2025 Revision workbook.",
+    "status": "Post hoc measurement-scale sensitivity; not part of the frozen primary ten-setup classification.",
+    "all_other_design_elements": "held fixed"
+  }
+}

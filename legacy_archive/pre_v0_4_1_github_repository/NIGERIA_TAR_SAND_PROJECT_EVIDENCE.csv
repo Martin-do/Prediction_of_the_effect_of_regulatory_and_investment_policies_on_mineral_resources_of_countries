@@ -1,0 +1,11 @@
+location/deposit,evidence_theme,criterion,evidence_summary,indicator/proxy,value,unit,source,confidence,usable_for_scoring,gap_remaining
+Lagos-Ogun-Ondo-Edo belt,geology,technical feasibility,Massive in-situ reserves spanning multiple states,in-situ reserves,42.74,billion tonnes,NGSA,high,yes,Recoverable vs in-place clarity
+"Agbabu, Ondo belt",geology,technical feasibility,Probable recoverable estimates,recoverable reserves,156,million tonnes,Ondo State Ministry,medium,yes,Need bankable DFS
+"Agbabu, Ondo belt",geology,technical feasibility,Shallow deposit depth,deposit depth,0.5-50,meters,ResearchGate,high,yes,
+"Agbabu, Ondo belt",geology,technical feasibility,Heavy extra-heavy API gravity,API gravity,7.87-10.54,°API,pathofscience.org,high,yes,
+"Agbabu, Ondo belt",extraction,technical feasibility,Recommended extraction for shallow depth,extraction method,surface mining,method,boell.org,high,yes,
+National,road bitumen,economic feasibility,Domestic annual demand,asphalt demand,"300,000",tonnes/year,Industry data (2023),high,yes,
+National,road bitumen,economic feasibility,Import expenditure cost,import cost,172,million USD,WITS (2020),high,yes,
+"Agbabu, Ondo belt",environment,environmental impact,"Severe risk to traditional livelihoods (farming, fishing)",social risk,high,qualitative,boell.org (Heinrich Böll),high,yes,EIA enforcement gaps
+National,regulation,governance capability,Mineral classification,legal status,Solid Mineral,classification,NMMA 2007,high,yes,Bitumen Bill 2025 pending
+National,investment,economic feasibility,Recent licensing round,new licenses,34,licenses,FMSMD (2024),high,yes,History of non-commercialization

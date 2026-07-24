@@ -1,0 +1,3 @@
+signal,signal_label,decision_bearing_units,base_model_benchmark_positive_units,median_base_model_minus_strongest_benchmark_r2,median_signal_increment_r2,maximum_absolute_identity_residual,interpretation
+Oil_Rents_GDP_Pct_lag1,Oil rents (t-1),180,180,0.1759115037025609,0.00506314269602585,0.0,Benchmark competitiveness was generally established before the signal under test entered its corresponding model rung.
+Regulatory_Quality_lag1,Regulatory Quality (t-1),180,177,0.17904983274732755,0.0007481263676609,0.0,Benchmark competitiveness was generally established before the signal under test entered its corresponding model rung.

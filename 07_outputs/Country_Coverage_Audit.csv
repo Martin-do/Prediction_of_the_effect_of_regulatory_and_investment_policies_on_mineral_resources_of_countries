@@ -1,0 +1,218 @@
+Country Name,ISO3,Max_Oil_Rents_1990_2021,Legacy_Target_Observations,Corrected_Flow_Observations,Previously_Excluded,Restored_By_Corrected_Flow,Nigeria,Oil_Rent_Intensive_ge1p0pct,Oil_Rent_Intensive_ge5p0pct,Oil_Rent_Intensive_ge10p0pct,Oil_Rent_Intensive_ge15p0pct
+Afghanistan,AFG,0.109823883946021,0,32,True,True,False,False,False,False,False
+Albania,ALB,4.8458773941323,27,33,False,False,False,True,False,False,False
+Algeria,DZA,29.5343935472454,27,35,False,False,False,True,True,True,True
+American Samoa,ASM,0.0,0,0,True,False,False,False,False,False,False
+Andorra,AND,,0,6,True,True,False,False,False,False,False
+Angola,AGO,57.5134839616206,27,35,False,False,False,True,True,True,True
+Antigua and Barbuda,ATG,0.0,0,35,True,True,False,False,False,False,False
+Argentina,ARG,4.58801102253871,27,35,False,False,False,True,False,False,False
+Armenia,ARM,0.0,27,33,False,False,False,False,False,False,False
+Aruba,ABW,0.001956400084591,0,35,True,True,False,False,False,False,False
+Australia,AUS,1.18927836382777,27,35,False,False,False,True,False,False,False
+Austria,AUT,0.0884445033789297,27,35,False,False,False,False,False,False,False
+Azerbaijan,AZE,39.5813073807196,27,32,False,False,False,True,True,True,True
+"Bahamas, The",BHS,0.0,0,35,True,True,False,False,False,False,False
+Bahrain,BHR,37.0437374677071,0,35,True,True,False,True,True,True,True
+Bangladesh,BGD,0.207602557921387,27,35,False,False,False,False,False,False,False
+Barbados,BRB,0.44650222837092,0,35,True,True,False,False,False,False,False
+Belarus,BLR,1.78844487580508,27,33,False,False,False,True,False,False,False
+Belgium,BEL,0.048118822461714,24,35,False,False,False,False,False,False,False
+Belize,BLZ,5.39177359139515,0,35,True,True,False,True,True,False,False
+Benin,BEN,1.5756167070246,0,35,True,True,False,True,False,False,False
+Bermuda,BMU,0.0,0,28,True,True,False,False,False,False,False
+Bhutan,BTN,0.0,0,29,True,True,False,False,False,False,False
+Bolivia,BOL,7.33080300030145,0,35,True,True,False,True,True,False,False
+Bosnia and Herzegovina,BIH,0.0,25,27,False,False,False,False,False,False,False
+Botswana,BWA,0.0,27,35,False,False,False,False,False,False,False
+Brazil,BRA,2.60445733698427,26,35,False,False,False,True,False,False,False
+British Virgin Islands,VGB,,0,35,True,True,False,False,False,False,False
+Brunei Darussalam,BRN,30.6838382585785,27,35,False,False,False,True,True,True,True
+Bulgaria,BGR,0.105709691779651,27,35,False,False,False,False,False,False,False
+Burkina Faso,BFA,0.0,0,35,True,True,False,False,False,False,False
+Burundi,BDI,0.0,27,30,False,False,False,False,False,False,False
+Cabo Verde,CPV,0.0,0,35,True,True,False,False,False,False,False
+Cambodia,KHM,0.0410317572268778,27,33,False,False,False,False,False,False,False
+Cameroon,CMR,8.68450877617334,0,35,True,True,False,True,True,False,False
+Canada,CAN,2.82978528865474,27,35,False,False,False,True,False,False,False
+Cayman Islands,CYM,0.0,0,35,True,True,False,False,False,False,False
+Central African Republic,CAF,0.0,0,35,True,True,False,False,False,False,False
+Chad,TCD,32.6666259924004,0,35,True,True,False,True,True,True,True
+Channel Islands,CHI,,0,0,True,False,False,False,False,False,False
+Chile,CHL,0.378183852893491,27,35,False,False,False,False,False,False,False
+China,CHN,5.54445902741075,0,35,True,True,False,True,True,False,False
+Colombia,COL,6.932640671944,27,35,False,False,False,True,True,False,False
+Comoros,COM,0.0,0,35,True,True,False,False,False,False,False
+"Congo, Dem. Rep.",COD,2.83293568116403,0,35,True,True,False,True,False,False,False
+"Congo, Rep.",COG,55.9533665542603,0,35,True,True,False,True,True,True,True
+Costa Rica,CRI,0.177814056910713,27,35,False,False,False,False,False,False,False
+Croatia,HRV,0.630971359439616,27,33,False,False,False,False,False,False,False
+Cuba,CUB,2.02585670473765,0,0,True,False,False,True,False,False,False
+Curaçao,CUW,,0,14,True,True,False,False,False,False,False
+Cyprus,CYP,0.0150445662460913,0,35,True,True,False,False,False,False,False
+Czechia,CZE,0.0508088454131561,27,32,False,False,False,False,False,False,False
+Côte d'Ivoire,CIV,3.70627347527892,0,35,True,True,False,True,False,False,False
+Denmark,DNK,1.70355050889399,27,35,False,False,False,True,False,False,False
+Djibouti,DJI,0.0,0,35,True,True,False,False,False,False,False
+Dominica,DMA,0.0,0,35,True,True,False,False,False,False,False
+Dominican Republic,DOM,0.0,0,35,True,True,False,False,False,False,False
+Ecuador,ECU,18.654574856841,0,35,True,True,False,True,True,True,True
+"Egypt, Arab Rep.",EGY,16.9450404713831,27,35,False,False,False,True,True,True,True
+El Salvador,SLV,0.577913009476031,0,33,True,True,False,False,False,False,False
+Equatorial Guinea,GNQ,82.776896134566,0,35,True,True,False,True,True,True,True
+Eritrea,ERI,0.0,0,32,True,True,False,False,False,False,False
+Estonia,EST,1.58302746810645,27,33,False,False,False,True,False,False,False
+Eswatini,SWZ,0.42623661227343,27,35,False,False,False,False,False,False,False
+Ethiopia,ETH,0.0089660103734654,0,35,True,True,False,False,False,False,False
+Faroe Islands,FRO,0.0,0,0,True,False,False,False,False,False,False
+Fiji,FJI,0.0,0,35,True,True,False,False,False,False,False
+Finland,FIN,0.0536121904628334,27,35,False,False,False,False,False,False,False
+France,FRA,0.0266357974593468,27,35,False,False,False,False,False,False,False
+French Polynesia,PYF,0.0,0,35,True,True,False,False,False,False,False
+Gabon,GAB,43.6933433166058,0,35,True,True,False,True,True,True,True
+"Gambia, The",GMB,0.0,0,35,True,True,False,False,False,False,False
+Georgia,GEO,0.421504288803926,27,30,False,False,False,False,False,False,False
+Germany,DEU,0.034054769495246,27,35,False,False,False,False,False,False,False
+Ghana,GHA,5.08048685091895,0,35,True,True,False,True,True,False,False
+Gibraltar,GIB,,0,0,True,False,False,False,False,False,False
+Greece,GRC,0.0876249965060038,27,35,False,False,False,False,False,False,False
+Greenland,GRL,0.0,0,0,True,False,False,False,False,False,False
+Grenada,GRD,0.0,0,35,True,True,False,False,False,False,False
+Guam,GUM,0.0,0,0,True,False,False,False,False,False,False
+Guatemala,GTM,0.887868748053499,0,35,True,True,False,False,False,False,False
+Guinea,GIN,0.0,0,34,True,True,False,False,False,False,False
+Guinea-Bissau,GNB,0.0,0,35,True,True,False,False,False,False,False
+Guyana,GUY,22.0821753098304,0,35,True,True,False,True,True,True,True
+Haiti,HTI,0.0,0,35,True,True,False,False,False,False,False
+Honduras,HND,0.0032878914982759,0,35,True,True,False,False,False,False,False
+"Hong Kong SAR, China",HKG,0.0157873788944443,0,35,True,True,False,False,False,False,False
+Hungary,HUN,0.425007394601361,27,35,False,False,False,False,False,False,False
+Iceland,ISL,0.0,27,35,False,False,False,False,False,False,False
+India,IND,1.72936446209105,27,35,False,False,False,True,False,False,False
+Indonesia,IDN,9.91945749843524,19,35,False,False,False,True,True,False,False
+"Iran, Islamic Rep.",IRN,31.6076762648214,0,35,True,True,False,True,True,True,True
+Iraq,IRQ,65.1575951980304,0,33,True,True,False,True,True,True,True
+Ireland,IRL,0.0084342457466574,27,35,False,False,False,False,False,False,False
+Isle of Man,IMN,,0,0,True,False,False,False,False,False,False
+Israel,ISR,0.0118850270586983,27,35,False,False,False,False,False,False,False
+Italy,ITA,0.108313381680821,27,35,False,False,False,False,False,False,False
+Jamaica,JAM,1.06917692280528,0,35,True,True,False,True,False,False,False
+Japan,JPN,0.0036977302079416,27,35,False,False,False,False,False,False,False
+Jordan,JOR,0.0698817164768138,27,35,False,False,False,False,False,False,False
+Kazakhstan,KAZ,24.7022127271689,27,33,False,False,False,True,True,True,True
+Kenya,KEN,0.0288123870707702,27,35,False,False,False,False,False,False,False
+Kiribati,KIR,0.0,0,35,True,True,False,False,False,False,False
+"Korea, Dem. People's Rep.",PRK,,0,0,True,False,False,False,False,False,False
+"Korea, Rep.",KOR,0.0596703107786387,0,35,True,True,False,False,False,False,False
+Kosovo,XKX,0.0,0,21,True,True,False,False,False,False,False
+Kuwait,KWT,58.3689295808333,0,35,True,True,False,True,True,True,True
+Kyrgyz Republic,KGZ,0.901919856447568,27,32,False,False,False,False,False,False,False
+Lao PDR,LAO,0.0,0,35,True,True,False,False,False,False,False
+Latvia,LVA,0.137675372248078,27,33,False,False,False,False,False,False,False
+Lebanon,LBN,0.0,27,35,False,False,False,False,False,False,False
+Lesotho,LSO,0.0,27,35,False,False,False,False,False,False,False
+Liberia,LBR,0.0,0,35,True,True,False,False,False,False,False
+Libya,LBY,64.8164362995569,27,26,False,False,False,True,True,True,True
+Liechtenstein,LIE,,0,19,True,True,False,False,False,False,False
+Lithuania,LTU,0.356954383456659,27,33,False,False,False,False,False,False,False
+Luxembourg,LUX,0.0,20,23,False,False,False,False,False,False,False
+"Macao SAR, China",MAC,0.0,0,35,True,True,False,False,False,False,False
+Madagascar,MDG,0.129091659780245,27,35,False,False,False,False,False,False,False
+Malawi,MWI,0.144130794366265,27,35,False,False,False,False,False,False,False
+Malaysia,MYS,10.2305989016965,27,35,False,False,False,True,True,True,False
+Maldives,MDV,0.0,0,35,True,True,False,False,False,False,False
+Mali,MLI,0.0,0,35,True,True,False,False,False,False,False
+Malta,MLT,0.0121328675494815,0,35,True,True,False,False,False,False,False
+Marshall Islands,MHL,,0,25,True,True,False,False,False,False,False
+Mauritania,MRT,11.4339025984773,0,35,True,True,False,True,True,True,False
+Mauritius,MUS,0.109303420945243,27,35,False,False,False,False,False,False,False
+Mexico,MEX,6.8456871360715,27,35,False,False,False,True,True,False,False
+"Micronesia, Fed. Sts.",FSM,,0,1,True,True,False,False,False,False,False
+Moldova,MDA,0.104253032464958,0,33,True,True,False,False,False,False,False
+Monaco,MCO,,0,0,True,False,False,False,False,False,False
+Mongolia,MNG,3.63584891999233,27,34,False,False,False,True,False,False,False
+Montenegro,MNE,0.0,12,18,False,False,False,False,False,False,False
+Morocco,MAR,0.0086331793463765,27,35,False,False,False,False,False,False,False
+Mozambique,MOZ,0.481285902978786,27,35,False,False,False,False,False,False,False
+Myanmar,MMR,4.86297915814427,27,35,False,False,False,True,False,False,False
+Namibia,NAM,0.0,27,35,False,False,False,False,False,False,False
+Nauru,NRU,0.0,0,7,True,True,False,False,False,False,False
+Nepal,NPL,0.0,0,31,True,True,False,False,False,False,False
+Netherlands,NLD,0.123024890879415,0,35,True,True,False,False,False,False,False
+New Caledonia,NCL,0.0,0,25,True,True,False,False,False,False,False
+New Zealand,NZL,1.05778347154292,27,35,False,False,False,True,False,False,False
+Nicaragua,NIC,0.241718443242608,0,35,True,True,False,False,False,False,False
+Niger,NER,4.23042002083649,0,35,True,True,False,True,False,False,False
+Nigeria,NGA,28.7054393824039,0,35,True,True,True,True,True,True,True
+North Macedonia,MKD,0.0230402748269549,27,31,False,False,False,False,False,False,False
+Northern Mariana Islands,MNP,,0,0,True,False,False,False,False,False,False
+Norway,NOR,11.563574057982,27,35,False,False,False,True,True,True,False
+Oman,OMN,49.6173962343468,0,35,True,True,False,True,True,True,True
+Pakistan,PAK,1.21484685318654,0,35,True,True,False,True,False,False,False
+Palau,PLW,,0,29,True,True,False,False,False,False,False
+Panama,PAN,0.0277938429371604,0,35,True,True,False,False,False,False,False
+Papua New Guinea,PNG,15.1343158261002,0,35,True,True,False,True,True,True,True
+Paraguay,PRY,0.21578841647676,0,35,True,True,False,False,False,False,False
+Peru,PER,3.13283320915742,27,35,False,False,False,True,False,False,False
+Philippines,PHL,0.237100244347381,27,35,False,False,False,False,False,False,False
+Poland,POL,0.0680195690834472,27,35,False,False,False,False,False,False,False
+Portugal,PRT,0.0714397773870135,27,35,False,False,False,False,False,False,False
+Puerto Rico (US),PRI,0.0,0,0,True,False,False,False,False,False,False
+Qatar,QAT,48.6558768141096,0,35,True,True,False,True,True,True,True
+Romania,ROU,2.29357782835182,27,35,False,False,False,True,False,False,False
+Russian Federation,RUS,15.355993811466,0,33,True,True,False,True,True,True,True
+Rwanda,RWA,0.0020406358081122,27,35,False,False,False,False,False,False,False
+Samoa,WSM,0.0,0,35,True,True,False,False,False,False,False
+San Marino,SMR,,0,3,True,True,False,False,False,False,False
+Saudi Arabia,SAU,54.085800995618,27,35,False,False,False,True,True,True,True
+Senegal,SEN,0.0016157127149988,0,35,True,True,False,False,False,False,False
+Serbia,SRB,1.7969801995401,14,18,False,False,False,True,False,False,False
+Seychelles,SYC,0.0,27,35,False,False,False,False,False,False,False
+Sierra Leone,SLE,0.0,0,35,True,True,False,False,False,False,False
+Singapore,SGP,0.153787333426844,27,35,False,False,False,False,False,False,False
+Sint Maarten (Dutch part),SXM,,0,14,True,True,False,False,False,False,False
+Slovak Republic,SVK,0.0281402221439932,0,32,True,True,False,False,False,False,False
+Slovenia,SVN,0.0002827546108903,27,33,False,False,False,False,False,False,False
+Solomon Islands,SLB,0.0,0,35,True,True,False,False,False,False,False
+"Somalia, Fed. Rep.",SOM,0.0,0,35,True,True,False,False,False,False,False
+South Africa,ZAF,1.37926877732773,27,35,False,False,False,True,False,False,False
+South Sudan,SSD,58.2776601424041,0,13,True,True,False,True,True,True,True
+Spain,ESP,0.0167206636998013,27,35,False,False,False,False,False,False,False
+Sri Lanka,LKA,0.0,0,35,True,True,False,False,False,False,False
+St. Kitts and Nevis,KNA,0.0,0,35,True,True,False,False,False,False,False
+St. Lucia,LCA,0.0,0,35,True,True,False,False,False,False,False
+St. Martin (French part),MAF,,0,0,True,False,False,False,False,False,False
+St. Vincent and the Grenadines,VCT,0.0,0,35,True,True,False,False,False,False,False
+Sudan,SDN,17.885274592108,0,34,True,True,False,True,True,True,True
+Suriname,SUR,10.4429452069185,0,35,True,True,False,True,True,True,False
+Sweden,SWE,0.0295942454553409,27,35,False,False,False,False,False,False,False
+Switzerland,CHE,0.0009600137277195,27,35,False,False,False,False,False,False,False
+Syrian Arab Republic,SYR,18.8708007318397,0,22,True,True,False,True,True,True,True
+São Tomé and Principe,STP,0.0,0,31,True,True,False,False,False,False,False
+Tajikistan,TJK,1.44203234686491,27,33,False,False,False,True,False,False,False
+Tanzania,TZA,0.0003979686429835,0,35,True,True,False,False,False,False,False
+Thailand,THA,1.90791786682769,27,35,False,False,False,True,False,False,False
+Timor-Leste,TLS,24.2895242064057,0,21,True,True,False,True,True,True,True
+Togo,TGO,0.0,0,35,True,True,False,False,False,False,False
+Tonga,TON,0.0,0,35,True,True,False,False,False,False,False
+Trinidad and Tobago,TTO,19.1790340751601,0,35,True,True,False,True,True,True,True
+Tunisia,TUN,6.45080502980873,27,35,False,False,False,True,True,False,False
+Turkmenistan,TKM,36.9958648805975,0,33,True,True,False,True,True,True,True
+Turks and Caicos Islands,TCA,0.0,0,11,True,True,False,False,False,False,False
+Tuvalu,TUV,,0,24,True,True,False,False,False,False,False
+Türkiye,TUR,0.260691501215256,0,35,True,True,False,False,False,False,False
+Uganda,UGA,0.0,27,35,False,False,False,False,False,False,False
+Ukraine,UKR,0.991786006161771,27,33,False,False,False,False,False,False,False
+United Arab Emirates,ARE,35.3156119922356,0,35,True,True,False,True,True,True,True
+United Kingdom,GBR,0.996222101169364,27,35,False,False,False,False,False,False,False
+United States,USA,0.703237008212799,27,35,False,False,False,False,False,False,False
+Uruguay,URY,0.0418304836494907,27,35,False,False,False,False,False,False,False
+Uzbekistan,UZB,5.40046980305752,27,33,False,False,False,True,True,False,False
+Vanuatu,VUT,0.0,0,35,True,True,False,False,False,False,False
+"Venezuela, RB",VEN,28.0600250559547,0,35,True,True,False,True,True,True,True
+Viet Nam,VNM,9.04473557257388,27,35,False,False,False,True,True,False,False
+Virgin Islands (US),VIR,0.0,0,0,True,False,False,False,False,False,False
+West Bank and Gaza,PSE,0.0,0,30,True,True,False,False,False,False,False
+"Yemen, Rep.",YEM,41.2105414506176,0,30,True,True,False,True,True,True,True
+Zambia,ZMB,0.0,27,35,False,False,False,False,False,False,False
+Zimbabwe,ZWE,0.0623369671683315,27,35,False,False,False,False,False,False,False

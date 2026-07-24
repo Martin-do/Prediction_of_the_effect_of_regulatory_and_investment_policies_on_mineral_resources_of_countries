@@ -1,0 +1,40 @@
+variable,definition,type
+Row_ID,Derived or source variable; see Source_Provenance_Log and pipeline code.,object
+Country Name,Derived or source variable; see Source_Provenance_Log and pipeline code.,object
+ISO3,Derived or source variable; see Source_Provenance_Log and pipeline code.,object
+Year,Derived or source variable; see Source_Provenance_Log and pipeline code.,int64
+Region,Derived or source variable; see Source_Provenance_Log and pipeline code.,object
+IncomeGroup,Derived or source variable; see Source_Provenance_Log and pipeline code.,object
+Max_Oil_Rents_Pre2016,Maximum oil rents as a percentage of GDP during the predeclared 1990-2015 classification window.,float64
+Inward_FDI_Net_Flow_USD,"Annual inward FDI net inflows, balance of payments, current US dollars.",float64
+Inward_FDI_Net_Flow_GDP_Pct,Annual inward FDI net inflows as a percentage of GDP; official World Bank series; no clipping; retained as a raw-ratio stress test.,float64
+Oil_Rents_GDP_Pct,Oil rents as a percentage of GDP.,float64
+GDP_Current_USD,Derived or source variable; see Source_Provenance_Log and pipeline code.,float64
+Population,Derived or source variable; see Source_Provenance_Log and pipeline code.,float64
+Trade_GDP_Pct,Derived or source variable; see Source_Provenance_Log and pipeline code.,float64
+Inflation_CPI_Annual_Pct,Derived or source variable; see Source_Provenance_Log and pipeline code.,float64
+Electricity_Access_Pct,Derived or source variable; see Source_Provenance_Log and pipeline code.,float64
+GDP_Growth_Annual_Pct,Derived or source variable; see Source_Provenance_Log and pipeline code.,float64
+Regulatory_Quality,Worldwide Governance Indicators Regulatory Quality estimate.,float64
+Inward_FDI_Net_Flow_USD_Millions,Annual inward FDI net inflows in current US$ millions.,float64
+Inward_FDI_Net_Flow_asinh,Inverse-hyperbolic-sine transform of annual inward FDI net inflows in US$ millions; negatives retained.,float64
+Inward_FDI_Net_Flow_GDP_Pct_Derived,Audit-only ratio calculated from annual inward FDI net inflows divided by GDP current US$; not used as a model target.,float64
+Flow_GDP_Pct_Official_Minus_Derived,"Audit-only difference between the official World Bank flow/GDP series and the internally derived ratio, in percentage points.",float64
+Inward_FDI_Net_Flow_GDP_Pct_asinh,Inverse-hyperbolic-sine transform of the official annual inward FDI net inflows as a percentage of GDP; negatives retained; primary size-normalised robustness target.,float64
+GDP_log,Natural log of one plus GDP in current US dollars.,float64
+Population_log,Natural log of one plus total population.,float64
+Inward_FDI_Net_Flow_asinh_lag1,Derived or source variable; see Source_Provenance_Log and pipeline code.,float64
+Inward_FDI_Net_Flow_GDP_Pct_lag1,Derived or source variable; see Source_Provenance_Log and pipeline code.,float64
+Inward_FDI_Net_Flow_GDP_Pct_asinh_lag1,Derived or source variable; see Source_Provenance_Log and pipeline code.,float64
+Oil_Rents_GDP_Pct_lag1,Derived or source variable; see Source_Provenance_Log and pipeline code.,float64
+GDP_log_lag1,Derived or source variable; see Source_Provenance_Log and pipeline code.,float64
+Population_log_lag1,Derived or source variable; see Source_Provenance_Log and pipeline code.,float64
+Trade_GDP_Pct_lag1,Derived or source variable; see Source_Provenance_Log and pipeline code.,float64
+Inflation_CPI_Annual_Pct_lag1,Derived or source variable; see Source_Provenance_Log and pipeline code.,float64
+Electricity_Access_Pct_lag1,Derived or source variable; see Source_Provenance_Log and pipeline code.,float64
+GDP_Growth_Annual_Pct_lag1,Derived or source variable; see Source_Provenance_Log and pipeline code.,float64
+Regulatory_Quality_lag1,Derived or source variable; see Source_Provenance_Log and pipeline code.,float64
+Oil_Rent_Intensive_Pre2016_ge1p0pct,Derived or source variable; see Source_Provenance_Log and pipeline code.,bool
+Oil_Rent_Intensive_Pre2016_ge5p0pct,Derived or source variable; see Source_Provenance_Log and pipeline code.,bool
+Oil_Rent_Intensive_Pre2016_ge10p0pct,Derived or source variable; see Source_Provenance_Log and pipeline code.,bool
+Oil_Rent_Intensive_Pre2016_ge15p0pct,Derived or source variable; see Source_Provenance_Log and pipeline code.,bool

@@ -1,0 +1,5 @@
+finding,evidence,corrective_action
+Legacy target was labelled as flow but had stock-scale magnitude,"USA 2021 legacy value = 13,085,709 US$ millions",Use official annual net-inflow series as primary target; retain stock only as forensic evidence.
+Legacy target contained no negative observations,Legacy negatives = 0; corrected annual-flow negatives = 504,Preserve negative annual flows and use asinh transformation on US$ millions.
+Legacy target-to-GDP ratio was clipped at exactly 200,Legacy observations exactly equal to 200 = 52,Use official World Bank annual net inflows as % GDP without clipping; treat raw ratio as stress test and asinh ratio as normalized robustness target.
+Legacy country mapping excluded Nigeria and many oil-rent-intensive economies,Nigeria legacy observations = 0; corrected flow observations = 35,Use World Bank ISO3 codes directly; never map outcome countries through a policy-data subset.

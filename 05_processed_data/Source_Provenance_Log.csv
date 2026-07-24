@@ -1,0 +1,11 @@
+file,last_updated,indicator_code,indicator_name,panel_variable,official_url
+WB_FDI_NET_INFLOWS_CURRENT_USD.xls,2026-07-01,BX.KLT.DINV.CD.WD,"Foreign direct investment, net inflows (BoP, current US$)",Inward_FDI_Net_Flow_USD,https://data.worldbank.org/indicator/BX.KLT.DINV.CD.WD
+WB_FDI_NET_INFLOWS_GDP_PCT.xls,2026-07-01,BX.KLT.DINV.WD.GD.ZS,"Foreign direct investment, net inflows (% of GDP)",Inward_FDI_Net_Flow_GDP_Pct,https://data.worldbank.org/indicator/BX.KLT.DINV.WD.GD.ZS
+WB_OIL_RENTS_GDP_PCT.xls,2026-07-01,NY.GDP.PETR.RT.ZS,Oil rents (% of GDP),Oil_Rents_GDP_Pct,https://data.worldbank.org/indicator/NY.GDP.PETR.RT.ZS
+WB_GDP_CURRENT_USD.xls,2026-07-01,NY.GDP.MKTP.CD,GDP (current US$),GDP_Current_USD,https://data.worldbank.org/indicator/NY.GDP.MKTP.CD
+WB_POPULATION_TOTAL.xls,2026-07-01,SP.POP.TOTL,"Population, total",Population,https://data.worldbank.org/indicator/SP.POP.TOTL
+WB_TRADE_GDP_PCT.xls,2026-07-01,NE.TRD.GNFS.ZS,Trade (% of GDP),Trade_GDP_Pct,https://data.worldbank.org/indicator/NE.TRD.GNFS.ZS
+WB_INFLATION_CPI_ANNUAL_PCT.xls,2026-07-01,FP.CPI.TOTL.ZG,"Inflation, consumer prices (annual %)",Inflation_CPI_Annual_Pct,https://data.worldbank.org/indicator/FP.CPI.TOTL.ZG
+WB_ELECTRICITY_ACCESS_PCT.xls,2026-07-01,EG.ELC.ACCS.ZS,Access to electricity (% of population),Electricity_Access_Pct,https://data.worldbank.org/indicator/EG.ELC.ACCS.ZS
+WB_GDP_GROWTH_ANNUAL_PCT.xls,2026-07-01,NY.GDP.MKTP.KD.ZG,GDP growth (annual %),GDP_Growth_Annual_Pct,https://data.worldbank.org/indicator/NY.GDP.MKTP.KD.ZG
+WGI_2025_Governance_Estimates_and_Scores.xlsx,2026-03-11,WGI-2025-RQ-ESTIMATE,Regulatory Quality governance estimate,Regulatory_Quality,https://www.worldbank.org/en/publication/worldwide-governance-indicators

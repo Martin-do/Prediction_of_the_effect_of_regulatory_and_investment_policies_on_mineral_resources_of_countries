@@ -1,0 +1,2 @@
+estimate_observations,year_min,year_max,score_equals_slope_times_estimate_plus_intercept_slope,intercept,pearson_correlation,maximum_absolute_residual,rmse_residual,interpretation
+5143,1996,2024,15.77142063703151,54.86279187337087,1.0,5.0214687519201107e-08,2.909500610888119e-08,"The score is a fixed affine transformation of the estimate in the frozen WGI 2025 workbook, to numerical precision."

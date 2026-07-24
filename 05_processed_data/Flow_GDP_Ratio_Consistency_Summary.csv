@@ -1,0 +1,7 @@
+metric,value
+comparable_country_years,6538.0
+median_absolute_difference_pct_points,0.0
+p95_absolute_difference_pct_points,0.0
+maximum_absolute_difference_pct_points,8.881784197001252e-16
+observations_abs_difference_gt_0_1_pct_points,0.0
+observations_abs_difference_gt_1_pct_point,0.0

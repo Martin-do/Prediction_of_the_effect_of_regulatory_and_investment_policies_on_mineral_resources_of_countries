@@ -1,0 +1,13 @@
+parameter,value
+cluster_unit,ISO3 country; all country-years move together
+paired_design,same country multiplicities applied to base and added model within every replicate
+country_draws_per_replicate,"exactly N countries with replacement, where N is the number of test countries"
+duplicate_handling,retained as integer multiplicities; never deduplicated
+frozen_contributions,"per-country n, sum(y), sum(y^2), SSE and SAE frozen before resampling"
+bootstrap_seed,20260714
+replicates,2000
+ci_level,0.95
+threshold_curve,-0.02 to 0.03 by 0.0005
+null_seed,20260715
+null_permutations,20
+null_bootstrap_replicates_per_permutation,500

@@ -1,0 +1,2 @@
+signal,target_role,target,universe,setup_verdict,material_units,bootstrap_units,material_setup_requires_caution,material_setup_interpretation
+Oil_Rents_GDP_Pct_lag1,normalized,Inward_FDI_Net_Flow_GDP_Pct_asinh,Oil_Rent_Intensive_Pre2016_ge1pct,Supported and practically material,11,18,True,"Supportive but not standalone confirmatory evidence: the two ge1pct material cells arise from correlated prespecified setups, have lower uncertainty bounds close to zero, and use conditional fixed-prediction bootstrap intervals that exclude model-refitting variability."

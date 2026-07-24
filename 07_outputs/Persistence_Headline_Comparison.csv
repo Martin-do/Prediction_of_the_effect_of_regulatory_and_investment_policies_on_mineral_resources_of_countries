@@ -1,0 +1,5 @@
+scale,sample,estimand,legacy_stock_persistence_r2,corrected_flow_persistence_r2,absolute_drop,like_for_like,interpretation
+asinh,all_available,pooled_consecutive_country_years,0.987088,0.198852,0.788236,True,"Same transform, same sample, same estimand; the contrast is attributable to the series, not to the evaluation choice."
+asinh,all_available,country_fold_median,0.985612,0.18847,0.797142,True,"Same transform, same sample, same estimand; the contrast is attributable to the series, not to the evaluation choice."
+asinh,common_support,pooled_consecutive_country_years,0.986927,-0.159115,1.146042,True,"Same transform, same sample, same estimand; the contrast is attributable to the series, not to the evaluation choice."
+asinh,common_support,country_fold_median,0.985612,-0.107327,1.092939,True,"Same transform, same sample, same estimand; the contrast is attributable to the series, not to the evaluation choice."

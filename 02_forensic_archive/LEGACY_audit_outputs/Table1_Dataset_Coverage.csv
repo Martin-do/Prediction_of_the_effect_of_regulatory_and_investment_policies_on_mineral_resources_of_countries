@@ -1,0 +1,29 @@
+Variable,N_obs,N_countries,Year_min,Year_max,Pct_missing
+Oil_Rents_GDP_Percent,6054,200,1990,2021,20.3
+Gas_Rents_GDP_Percent,6083,201,1990,2021,19.9
+Coal_Rents_GDP_Percent,6042,200,1990,2021,20.4
+Mineral_Rents_GDP_Percent,6417,214,1990,2021,15.5
+Mineral_Rents_Excl_OilGas,6417,214,1990,2021,15.5
+Total_NR_Rents_GDP_Percent,6395,214,1990,2021,15.8
+Hydrocarbon_Rents_GDP_Percent,6168,204,1990,2021,18.8
+Mining_GDP_Proxy,6417,214,1990,2021,15.5
+FDI_Flows_Millions_USD,2435,92,1995,2021,67.9
+FDI_asinh,2435,92,1995,2021,67.9
+FDI_GDP_Pct,2435,92,1995,2021,67.9
+Avg_FDI_Restriction_Index,2435,92,1995,2021,67.9
+Regulatory_Quality,4966,205,1996,2023,34.6
+CPI_Score,2108,180,2012,2023,72.2
+GDP_log,7206,214,1990,2024,5.1
+GDP_Per_Capita_log,7206,214,1990,2024,5.1
+Population_log,7595,217,1990,2024,0.0
+Trade_GDP_Percent,5944,191,1990,2024,21.7
+Inflation_CPI_Annual_Pct,6015,193,1990,2024,20.8
+Exchange_Rate_LCU_USD,7094,213,1990,2024,6.6
+Electricity_Access_Pct,6532,216,1990,2023,14.0
+Oil_Price_Global_USD,7595,217,1990,2024,0.0
+IMF_Trade_Reform_Index,1248,78,1996,2014,83.6
+Domestic finance,1248,78,1996,2014,83.6
+External finance,1248,78,1996,2014,83.6
+Labor market,1247,78,1996,2014,83.6
+Product market,1248,78,1996,2014,83.6
+Total_Revenue_USD,658,61,2000,2023,91.3

@@ -1,0 +1,6 @@
+check,value,status
+previously_excluded_reference_economies,31,INFO
+restored_with_corrected_flow,31,PASS
+restored_with_at_least_one_complete_M3_row,30,INFO
+restored_without_complete_M3_row,1,INFO
+negative_annual_flows_retained,504,PASS

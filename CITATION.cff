@@ -1,0 +1,25 @@
+cff-version: 1.2.0
+title: "Before the Weights: Reproducibility Package for a Validation-First Signal-Admissibility Audit"
+message: "Please cite the associated manuscript and this software release when using the data pipeline, fixed folds, matched samples, or bootstrap outputs."
+type: software
+authors:
+  - family-names: Ige
+    given-names: Oladeji Oluremi
+abstract: >-
+  A deterministic research-software and data-provenance package for auditing whether
+  candidate oil-rent and Regulatory Quality signals are admissible before AI-MCDM
+  criteria selection and weighting. The release includes official archived inputs, a
+  corrected 217-economy panel, fixed country folds, matched samples, benchmark and
+  incremental comparisons, paired country-cluster bootstrap outputs, null diagnostics, manuscript-reporting
+  sources, publication assets, a post hoc WGI scale check, and complete regeneration records.
+version: 0.4.3
+date-released: 2026-07-23
+license: MIT
+repository-code: "https://github.com/igeoo/Prediction_of_the_effect_of_regulatory_and_investment_policies_on_mineral_resources_of_countries"
+keywords:
+  - decision support systems
+  - AI-MCDM
+  - signal admissibility
+  - clustered bootstrap
+  - foreign direct investment
+  - resource-rich economies

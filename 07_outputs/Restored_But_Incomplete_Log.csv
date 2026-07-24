@@ -1,0 +1,2 @@
+ISO3,country_name,flow_years,always_missing_core_fields,partially_missing_core_fields,status
+TKM,Turkmenistan,33,Inflation_CPI_Annual_Pct_lag1,Inward_FDI_Net_Flow_asinh_lag1; Electricity_Access_Pct_lag1; Oil_Rents_GDP_Pct_lag1; Regulatory_Quality_lag1,Outcome restored; no complete M3 country-year

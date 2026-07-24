@@ -1,0 +1,24 @@
+panel,item,locked_value
+Panel A. Construct provenance and coverage audit,Panel period,1990-2024
+Panel A. Construct provenance and coverage audit,Economies,217
+Panel A. Construct provenance and coverage audit,Country-year rows,"7,595"
+Panel A. Construct provenance and coverage audit,Observed annual FDI-flow rows,"6,635"
+Panel A. Construct provenance and coverage audit,Preserved negative-flow years,504
+Panel A. Construct provenance and coverage audit,Observed normalized FDI-flow rows,"6,538"
+Panel A. Construct provenance and coverage audit,Oil-rents observations,"6,054"
+Panel A. Construct provenance and coverage audit,Regulatory Quality observations,"5,143"
+Panel A. Construct provenance and coverage audit,">=5% oil-rent economies excluded by prior mapping, all restored",31
+Panel A. Construct provenance and coverage audit,Restored economies entering complete M3 sample,30
+Panel A. Construct provenance and coverage audit,Nigeria annual FDI-flow observations,35
+Panel B. Feature ladder and validation design,M1,"Lagged outcome, GDP, population, inflation, electricity access"
+Panel B. Feature ladder and validation design,M2,M1 plus lagged oil rents
+Panel B. Feature ladder and validation design,M3,M2 plus lagged Regulatory Quality
+Panel B. Feature ladder and validation design,Algorithms,"Ridge, Elastic Net, Random Forest"
+Panel B. Feature ladder and validation design,Country validation,Five country-grouped folds pooled into one out-of-fold unit
+Panel B. Feature ladder and validation design,Fold sizes (economies),"42, 47, 44, 42, 42"
+Panel B. Feature ladder and validation design,Future validation,Five prespecified cutoffs (train to 2012/2014/2015/2016/2018)
+Panel B. Feature ladder and validation design,Country universes,"All economies; >=1%, >=5%, >=10%, >=15% oil-rent groups"
+Panel B. Feature ladder and validation design,Units per setup,3 algorithms x 6 validation environments = 18
+Panel B. Feature ladder and validation design,Uncertainty,"2,000-replicate paired country-cluster bootstrap"
+Panel B. Feature ladder and validation design,Decision-bearing setups,10 per signal
+Panel B. Feature ladder and validation design,Regulatory Quality scale,WGI governance estimate; alternative 0-100 score checked post hoc

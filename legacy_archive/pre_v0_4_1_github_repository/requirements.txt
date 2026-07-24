@@ -1,0 +1,29 @@
+# =============================================================================
+# REQUIREMENTS — Investment Signal Audit (Part 1 Upgrade)
+# =============================================================================
+# Install: pip install -r requirements.txt
+# Tested on Python 3.10+
+#
+# Run order:
+#   1. fetch_mineral_data.py
+#   2. build_upgraded_dataset.py
+#   3. build_lagged_features.py
+#   4. signal_audit_nb.py  (or open as Jupyter notebook via jupytext)
+# =============================================================================
+
+# Core data
+pandas>=1.5.0
+numpy>=1.23.0
+requests>=2.28.0
+
+# Machine learning
+scikit-learn>=1.2.0
+
+# Optional boosting (recommended — XGBoost used by default if present)
+xgboost>=1.7.0
+lightgbm>=3.3.0
+
+# Notebook support
+jupytext>=1.14.0
+jupyter>=1.0.0
+ipykernel>=6.0.0

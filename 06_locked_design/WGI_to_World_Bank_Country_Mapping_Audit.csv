@@ -1,0 +1,215 @@
+Economy (name),Economy (code),Mapped_to_WB_ISO3
+Andorra,ADO,False
+Afghanistan,AFG,True
+Angola,AGO,True
+Albania,ALB,True
+United Arab Emirates,ARE,True
+Argentina,ARG,True
+Armenia,ARM,True
+Antigua and Barbuda,ATG,True
+Australia,AUS,True
+Austria,AUT,True
+Azerbaijan,AZE,True
+Burundi,BDI,True
+Belgium,BEL,True
+Benin,BEN,True
+Burkina Faso,BFA,True
+Bangladesh,BGD,True
+Bulgaria,BGR,True
+Bahrain,BHR,True
+"Bahamas, The",BHS,True
+Bosnia and Herzegovina,BIH,True
+Belarus,BLR,True
+Belize,BLZ,True
+Bermuda,BMU,True
+Bolivia,BOL,True
+Brazil,BRA,True
+Barbados,BRB,True
+Brunei Darussalam,BRN,True
+Bhutan,BTN,True
+Botswana,BWA,True
+Central African Republic,CAF,True
+Canada,CAN,True
+Switzerland,CHE,True
+Chile,CHL,True
+China,CHN,True
+Côte d’Ivoire,CIV,True
+Cameroon,CMR,True
+"Congo, Dem. Rep.",COD,True
+"Congo, Rep.",COG,True
+Colombia,COL,True
+Comoros,COM,True
+Cabo Verde,CPV,True
+Costa Rica,CRI,True
+Cuba,CUB,True
+Cayman Islands,CYM,True
+Cyprus,CYP,True
+Czechia,CZE,True
+Germany,DEU,True
+Djibouti,DJI,True
+Dominica,DMA,True
+Denmark,DNK,True
+Dominican Republic,DOM,True
+Algeria,DZA,True
+Ecuador,ECU,True
+"Egypt, Arab Rep.",EGY,True
+Eritrea,ERI,True
+Spain,ESP,True
+Estonia,EST,True
+Ethiopia,ETH,True
+Finland,FIN,True
+Fiji,FJI,True
+France,FRA,True
+Gabon,GAB,True
+United Kingdom,GBR,True
+Georgia,GEO,True
+Ghana,GHA,True
+Guinea,GIN,True
+"Gambia, The",GMB,True
+Guinea-Bissau,GNB,True
+Equatorial Guinea,GNQ,True
+Greece,GRC,True
+Grenada,GRD,True
+Guatemala,GTM,True
+French Guiana,GUF,False
+Guyana,GUY,True
+"Hong Kong SAR, China",HKG,True
+Honduras,HND,True
+Croatia,HRV,True
+Haiti,HTI,True
+Hungary,HUN,True
+Indonesia,IDN,True
+India,IND,True
+Ireland,IRL,True
+"Iran, Islamic Rep.",IRN,True
+Iraq,IRQ,True
+Iceland,ISL,True
+Israel,ISR,True
+Italy,ITA,True
+Jamaica,JAM,True
+Jordan,JOR,True
+Japan,JPN,True
+Kazakhstan,KAZ,True
+Kenya,KEN,True
+Kyrgyz Republic,KGZ,True
+Cambodia,KHM,True
+"Korea, Rep.",KOR,True
+Kuwait,KWT,True
+Lao PDR,LAO,True
+Lebanon,LBN,True
+Liberia,LBR,True
+Libya,LBY,True
+Liechtenstein,LIE,True
+Sri Lanka,LKA,True
+Lesotho,LSO,True
+Lithuania,LTU,True
+Luxembourg,LUX,True
+Latvia,LVA,True
+"Macao SAR, China",MAC,True
+Morocco,MAR,True
+Moldova,MDA,True
+Madagascar,MDG,True
+Maldives,MDV,True
+Mexico,MEX,True
+North Macedonia,MKD,True
+Mali,MLI,True
+Malta,MLT,True
+Myanmar,MMR,True
+Mongolia,MNG,True
+Mozambique,MOZ,True
+Mauritania,MRT,True
+Martinique,MTQ,False
+Mauritius,MUS,True
+Malawi,MWI,True
+Malaysia,MYS,True
+Namibia,NAM,True
+Niger,NER,True
+Nigeria,NGA,True
+Nicaragua,NIC,True
+Netherlands,NLD,True
+Norway,NOR,True
+Nepal,NPL,True
+New Zealand,NZL,True
+Oman,OMN,True
+Pakistan,PAK,True
+Panama,PAN,True
+Peru,PER,True
+Philippines,PHL,True
+Papua New Guinea,PNG,True
+Poland,POL,True
+Puerto Rico (U.S.),PRI,True
+"Korea, Dem. People's Rep.",PRK,True
+Portugal,PRT,True
+Paraguay,PRY,True
+West Bank and Gaza,PSE,True
+Qatar,QAT,True
+Romania,ROU,True
+Russian Federation,RUS,True
+Rwanda,RWA,True
+Saudi Arabia,SAU,True
+Sudan,SDN,True
+Senegal,SEN,True
+Singapore,SGP,True
+Sierra Leone,SLE,True
+El Salvador,SLV,True
+Federal Republic of Somalia,SOM,True
+Serbia,SRB,True
+São Tomé and Príncipe,STP,True
+Suriname,SUR,True
+Slovak Republic,SVK,True
+Slovenia,SVN,True
+Sweden,SWE,True
+Eswatini,SWZ,True
+Seychelles,SYC,True
+Syrian Arab Republic,SYR,True
+Chad,TCD,True
+Togo,TGO,True
+Thailand,THA,True
+Tajikistan,TJK,True
+Turkmenistan,TKM,True
+Trinidad and Tobago,TTO,True
+Tunisia,TUN,True
+Türkiye,TUR,True
+"Taiwan, China",TWN,False
+Tanzania,TZA,True
+Uganda,UGA,True
+Ukraine,UKR,True
+Uruguay,URY,True
+United States,USA,True
+Uzbekistan,UZB,True
+"Venezuela, RB",VEN,True
+Viet Nam,VNM,True
+Samoa,WSM,True
+"Yemen, Rep.",YEM,True
+South Africa,ZAF,True
+Zambia,ZMB,True
+Zimbabwe,ZWE,True
+Timor-Leste,TLS,True
+Aruba,ABW,True
+Anguilla,AIA,False
+Netherlands Antilles (former),ANT,False
+American Samoa,ASM,True
+"Micronesia, Fed. Sts.",FSM,True
+Guam,GUM,True
+Kiribati,KIR,True
+St. Kitts and Nevis,KNA,True
+St. Lucia,LCA,True
+Réunion,REU,False
+Solomon Islands,SLB,True
+Tonga,TON,True
+Tuvalu,TUV,True
+St. Vincent and the Grenadines,VCT,True
+Virgin Islands (U.S.),VIR,True
+Vanuatu,VUT,True
+Cook Islands,COK,False
+Marshall Islands,MHL,True
+Montenegro,MNE,True
+Nauru,NRU,True
+Palau,PLW,True
+Kosovo,XKX,True
+Greenland,GRL,True
+Niue,NIU,False
+"Jersey, Channel Islands",JEY,False
+South Sudan,SSD,True
+Monaco,MCO,True
+San Marino,SMR,True

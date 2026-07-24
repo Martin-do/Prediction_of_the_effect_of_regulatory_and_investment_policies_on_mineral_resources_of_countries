@@ -1,0 +1,12 @@
+metric,value
+decision_bearing_units_per_scale,180
+matched_units,180
+setup_verdict_changes,0
+unit_verdict_changes,2
+median_absolute_point_delta_difference,1.8238871784398425e-12
+maximum_absolute_point_delta_difference,1.0571470088205359e-10
+estimate_overall_classification,Setup-dependent
+score_overall_classification,Setup-dependent
+estimate_setup_counts,"{""Setup-dependent"": 10}"
+score_setup_counts,"{""Setup-dependent"": 10}"
+identical_matched_row_sets,True

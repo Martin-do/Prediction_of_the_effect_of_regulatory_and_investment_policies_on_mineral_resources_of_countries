@@ -1,0 +1,29 @@
+threshold_pct,metric,value
+1.0,Oil-rent-intensive economies,72
+1.0,Previously excluded oil-rent-intensive economies,38
+1.0,Previously excluded economies restored by corrected flow,37
+1.0,High-oil-rent country-years,1531
+1.0,High-oil-rent country-years with legacy target,573
+1.0,High-oil-rent country-years with corrected flow,1481
+5.0,Oil-rent-intensive economies,47
+5.0,Previously excluded oil-rent-intensive economies,31
+5.0,Previously excluded economies restored by corrected flow,31
+5.0,High-oil-rent country-years,919
+5.0,High-oil-rent country-years with legacy target,264
+5.0,High-oil-rent country-years with corrected flow,896
+10.0,Oil-rent-intensive economies,36
+10.0,Previously excluded oil-rent-intensive economies,26
+10.0,Previously excluded economies restored by corrected flow,26
+10.0,High-oil-rent country-years,676
+10.0,High-oil-rent country-years with legacy target,176
+10.0,High-oil-rent country-years with corrected flow,657
+15.0,Oil-rent-intensive economies,32
+15.0,Previously excluded oil-rent-intensive economies,24
+15.0,Previously excluded economies restored by corrected flow,24
+15.0,High-oil-rent country-years,530
+15.0,High-oil-rent country-years with legacy target,145
+15.0,High-oil-rent country-years with corrected flow,516
+,Nigeria corrected FDI-flow observations,35
+5.0,Previously excluded reference-threshold economies restored with corrected flow,31
+5.0,Restored reference-threshold economies with at least one complete M3 row,30
+5.0,Restored reference-threshold economies without a complete M3 row,1
