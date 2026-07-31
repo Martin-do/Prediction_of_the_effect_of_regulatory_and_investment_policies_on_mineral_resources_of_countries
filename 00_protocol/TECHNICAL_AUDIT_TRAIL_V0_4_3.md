@@ -30,7 +30,7 @@ The identity residual is zero for every unit. Decision-bearing summaries reprodu
 | Signal | Units | Base benchmark-positive | Median base margin | Median signal increment |
 |---|---:|---:|---:|---:|
 | Oil rents | 180 | 180 | 0.1759115037 | 0.0050631427 |
-| Regulatory Quality | 180 | 177 | 0.1793236413 | 0.0006654433 |
+| Regulatory Quality | 180 | 177 | 0.1790498327 | 0.0007481264 |
 
 These medians are separate distribution summaries and are not presented as a median-level additive decomposition.
 
