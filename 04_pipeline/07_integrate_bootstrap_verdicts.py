@@ -28,9 +28,9 @@ def main() -> None:
     )
     merged["material_setup_interpretation"] = merged["material_setup_requires_caution"].map({
         True: (
-            "Supportive but not standalone confirmatory evidence: the two ge1pct material cells arise from "
-            "correlated prespecified setups, have lower uncertainty bounds close to zero, and use conditional "
-            "fixed-prediction bootstrap intervals that exclude model-refitting variability."
+            "Supportive but not standalone confirmatory evidence: the single ge1pct material setup is the "
+            "normalized outcome specification, has a lower uncertainty bound close to zero, and uses a conditional "
+            "fixed-prediction bootstrap interval that excludes model-refitting variability."
         ),
         False: "No additional material-cell qualification beyond the five-way verdict and cross-setup guardrail.",
     })
