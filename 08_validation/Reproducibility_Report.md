@@ -37,8 +37,7 @@
 
 ## Scientific status
 
-The V0.4.3 release is suitable for scientific interpretation of setup-dependent signal admissibility, subject to the conditional-bootstrap estimand and correlated-setup caveats below. The raw flow/GDP ratio remains available as an intentionally harsh leverage stress test but is excluded from final admissibility classification. Final classifications are based only on the transformed annual-flow level and transformed normalized-flow targets.
-
+The V0.4.3 release is suitable for scientific interpretation of setup-dependent signal admissibility, subject to the conditional-bootstrap estimand and material-setup caveat below. The raw flow/GDP ratio remains available as an intentionally harsh leverage stress test but is excluded from final admissibility classification. Final classifications are based only on the transformed annual-flow level and transformed normalized-flow targets.
 
 ## Bootstrap estimand
 
@@ -46,7 +45,7 @@ The paired country-cluster bootstrap resamples countries from frozen out-of-fold
 
 ## Material-cell qualification
 
-Two oil-rent setups in the pre-2016 >=1% universe meet the prespecified materiality rule. They are treated as supportive components of the complete cross-setup pattern, not as independent confirmatory replications, because the setups are correlated, their lower uncertainty bounds are close to zero, and their intervals are conditional on fixed predictions. The material category is not required to be populated for the paper's conclusion.
+One oil-rent setup in the pre-2016 >=1% universe meets the prespecified materiality rule: the normalized outcome specification. It is treated as supportive rather than standalone confirmatory evidence because its lower uncertainty bound is close to zero and its interval is conditional on fixed predictions. The corresponding primary-outcome >=1% setup is directionally positive but marginal. The material category is not required to be populated for the paper's conclusion.
 
 ## Scope limitation
 
