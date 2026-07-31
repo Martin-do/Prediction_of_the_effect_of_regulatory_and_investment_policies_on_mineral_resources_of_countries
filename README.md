@@ -10,7 +10,7 @@ A model can beat a naïve benchmark while an individual candidate signal adds on
 2. paired incremental signal value on matched observations;
 3. stability and materiality across targets, country universes, thresholds, future cutoffs and uncertainty analysis.
 
-The empirical application uses aggregate national inward FDI as an investment-context outcome in resource-rich economies. It does **not** measure petroleum-sector, mining-sector or project-level investment.
+The empirical application uses aggregate national inward FDI as an investment-context outcome in resource-rich economies. It does **not** measure petroleum-sector, mining-sector or project-level investment, and the analysis is predictive rather than causal.
 
 ## Locked release
 
@@ -24,7 +24,6 @@ The empirical application uses aggregate national inward FDI as an investment-co
 - Null test: **20 permutations × 500 replicates**
 - V0.4.3 deterministic comparison: **209/209 files byte-identical** (202 inherited V0.4.2 files, one unit-level base-margin output, and six manuscript-reporting generator outputs)
 
-
 ## V0.4.3 additions
 
 V0.4.3 adds only manuscript-aligned reporting and transparency layers:
@@ -35,6 +34,16 @@ V0.4.3 adds only manuscript-aligned reporting and transparency layers:
 - an isolated post hoc check comparing the WGI Regulatory Quality estimate with the alternative 0–100 score.
 
 The post hoc scale check found no unit or setup verdict changes under shared bootstrap draws. It does not alter the primary ten-setup classification. See `RELEASE_NOTES_V0_4_3.md`.
+
+## Manuscript alignment status
+
+A manuscript-to-output audit of `MS2_Full_Manuscript_DSS_v8.docx` identified several reporting updates required to align the paper with the current V0.4.3 manuscript-facing outputs. The complete review checklist is:
+
+- `MANUSCRIPT_EDITS_V0_4_3_COMPLETE.md`
+
+The checklist covers the Abstract, Tables 1/3/4, Sections 4.3–4.5 and 5.1/5.3, Figure 2a, the Conclusion, and repository-side reporting/documentation synchronization items.
+
+These alignment items do **not** change the locked empirical design, raw inputs, panel construction, folds, matched samples, bootstrap seeds, classification rules, or overall signal-level conclusions. They correct stale manuscript/reporting text and values so that the narrative matches the current generated outputs.
 
 ## Reproduce the release
 
@@ -48,6 +57,7 @@ The command validates the raw workbooks, rebuilds the panel, recreates fixed fol
 
 ## Start here
 
+- `MANUSCRIPT_EDITS_V0_4_3_COMPLETE.md`
 - `RELEASE_NOTES_V0_4_3.md`
 - `00_protocol/ANALYSIS_PLAN_LOCKED.md`
 - `00_protocol/BOOTSTRAP_METHOD_AND_GUARDRAILS.md`
@@ -83,7 +93,17 @@ The command validates the raw workbooks, rebuilds the panel, recreates fixed fol
 
 ## Current scientific interpretation
 
-The uncertainty-quantified cross-setup analysis classifies both oil rents and Regulatory Quality as **setup-dependent**. Oil rents show a more favourable pattern, including a small number of qualified material setups; Regulatory Quality is consistently more fragile. Neither signal is universally admissible for direct empirical weighting.
+The uncertainty-quantified cross-setup analysis classifies both oil rents and Regulatory Quality as **setup-dependent** overall.
+
+For oil rents, the ten decision-bearing setups currently resolve to **1 material, 4 marginal, and 5 setup-dependent**. The single material setup is the **>=1% oil-rent universe under the normalized FDI outcome**; the corresponding primary-outcome setup is marginal. Regulatory Quality is **setup-dependent in all 10 setups**.
+
+Oil rents therefore show the more favourable profile, but neither signal is universally admissible for direct empirical weighting. Both retain the locked decision role **Candidate pre-weighting signal**.
+
+## Scope and claims guardrail
+
+The outcome is aggregate national inward FDI, used as a proxy for the national investment environment. The study does not identify petroleum-sector, mining-sector, or project-level investment and does not estimate causal policy effects. Regulatory Quality is treated as a broad national governance proxy rather than a validated mineral-sector regulatory measure.
+
+The study therefore supports claims about **predictive signal admissibility before AI–MCDM weighting**, not causal effects of regulation or resource policy on sector-specific investment.
 
 ## Licensing
 
