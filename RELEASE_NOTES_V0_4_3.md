@@ -31,7 +31,7 @@ The unit-level identity is exact:
 Decision-bearing headline values:
 
 - oil rents: base model benchmark-positive in 180/180 units; median base margin 0.1759115; median signal increment 0.0050631;
-- Regulatory Quality: base model benchmark-positive in 177/180 units; median base margin 0.1793236; median signal increment 0.0006654.
+- Regulatory Quality: base model benchmark-positive in 177/180 units; median base margin 0.1790498; median signal increment 0.0007481.
 
 ### Publication assets
 
