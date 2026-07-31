@@ -64,53 +64,33 @@ Make all of the following corrections.
 
 ### 3.2 Oil rents, >=5%, normalized model-minus-benchmark median
 
-**Find:**
+**Find:** `0.15840 / 0.18636`
 
-`0.15840 / 0.18636`
-
-**Replace with:**
-
-`0.15840 / 0.18630`
+**Replace with:** `0.15840 / 0.18630`
 
 ### 3.3 Regulatory Quality, All, normalized model-minus-benchmark median
 
-**Find:**
+**Find:** `0.25826 / 0.22293`
 
-`0.25826 / 0.22293`
-
-**Replace with:**
-
-`0.25826 / 0.22433`
+**Replace with:** `0.25826 / 0.22433`
 
 ### 3.4 Regulatory Quality, All, normalized unit verdicts
 
-**Find:**
+**Find:** `0/14/2/2/0 / 4/10/1/3/0`
 
-`0/14/2/2/0 / 4/10/1/3/0`
-
-**Replace with:**
-
-`0/14/2/2/0 / 4/10/2/2/0`
+**Replace with:** `0/14/2/2/0 / 4/10/2/2/0`
 
 ### 3.5 Regulatory Quality, >=1%, normalized signal increment
 
-**Find:**
+**Find:** `0.00005 / 0.00063`
 
-`0.00005 / 0.00063`
-
-**Replace with:**
-
-`0.00005 / 0.00081`
+**Replace with:** `0.00005 / 0.00081`
 
 ### 3.6 Regulatory Quality, >=5%, normalized model-minus-benchmark median
 
-**Find:**
+**Find:** `0.14118 / 0.18177`
 
-`0.14118 / 0.18177`
-
-**Replace with:**
-
-`0.14118 / 0.18196`
+**Replace with:** `0.14118 / 0.18196`
 
 ---
 
@@ -166,7 +146,7 @@ The current paragraph referring to **two material oil-rents setups** is no longe
 
 ## 6. Figure 2 — Panel (a)
 
-Figure 2a must be regenerated/replaced because the current heatmap still displays the old two-material-setup pattern.
+Figure 2a must be regenerated/replaced because the manuscript image still displays the old two-material-setup pattern.
 
 ### Required oil-rents setup pattern
 
@@ -196,8 +176,6 @@ No manuscript edit is required solely because of the 1/4/5 setup-count correctio
 
 ## 7. Section 4.5 — Final Signal-Admissibility Roles
 
-### Main paragraph
-
 **Find:**
 
 `Oil rents was the more favourable signal at the setup level, with two material and three marginal setups...`
@@ -220,13 +198,9 @@ No manuscript edit is required solely because of the 1/4/5 setup-count correctio
 
 `Oil rents (t−1) | 10 | 1 | 4 | 5 | 0 | 0 | Setup-dependent`
 
-The locked decision role remains:
-
-`Candidate pre-weighting signal`
+The locked decision role remains `Candidate pre-weighting signal`.
 
 ### Table 4 note
-
-The existing note based on “the two oil-rent material setups” must be replaced.
 
 **Find:**
 
@@ -254,8 +228,6 @@ The corrected base-model headline values occur a second time in the Discussion a
 
 ## 10. Section 5.3 — Interpreting the Two Candidate Signals
 
-The opening oil-rents interpretation currently depends on the old two-material-setup result and should be revised.
-
 ### Find:
 
 `Oil rents produced the more favourable evidence profile, but that profile remained conditional. Its two material setups occurred at the 1% resource-intensity threshold, with three further marginal setups, and evidence weakened as the threshold became more restrictive while matched sample sizes also declined.`
@@ -275,8 +247,6 @@ The opening oil-rents interpretation currently depends on the old two-material-s
 ---
 
 ## 11. Conclusion
-
-### Oil-rents setup summary
 
 **Find:**
 
@@ -316,58 +286,75 @@ The following remain aligned with the current analytical interpretation unless a
 
 ---
 
-## 13. Repository-Side Consistency Fixes Before Final Freeze
+## 13. Repository-Side Consistency Fixes / Re-verification Targets
 
-These are not Word-manuscript edits, but they should be corrected before treating V0.4.3 as fully internally aligned.
+These are not Word-manuscript edits. They were identified during the alignment audit and must be correct before V0.4.3 is treated as fully internally synchronized. Items corrected on `main` are retained here as explicit re-verification targets.
 
 ### `04_pipeline/07_integrate_bootstrap_verdicts.py`
 
-Remove the stale hard-coded wording referring to:
+**Stale form:** `the two ge1pct material cells`
 
-`the two ge1pct material cells`
+**Required/current interpretation:** only the normalized >=1% oil-rents setup is material; the primary >=1% setup is marginal. The generator should describe a **single ge1pct material setup** and should not refer to two correlated material cells.
 
-Only one >=1% setup is now material.
+Because this generator writes annotation fields into multiple outputs, rerunning this stage should refresh at least:
 
-Regenerate any affected reporting outputs, especially:
+- `07_outputs/Central_Verdict_Sensitivity_Table.csv`
+- `07_outputs/Oil_Rent_Threshold_Sensitivity_Table.csv`
+- `07_outputs/Material_Setup_Caveats.csv`
 
-`07_outputs/Material_Setup_Caveats.csv`
+`Material_Setup_Caveats.csv` has been synchronized directly; the two larger sensitivity tables should be checked after pipeline regeneration to confirm the stale generated annotation has disappeared there too.
 
 ### `RELEASE_NOTES_V0_4_3.md`
 
-Update the Regulatory Quality headline values from the stale:
+**Stale Regulatory Quality headline values:**
 
 - median base margin `0.1793236`
 - median signal increment `0.0006654`
 
-to the current generated values:
+**Required/current values:**
 
 - median base margin `0.1790498`
 - median signal increment `0.0007481`
 
 ### `00_protocol/TECHNICAL_AUDIT_TRAIL_V0_4_3.md`
 
-Likewise replace the stale Regulatory Quality values:
+**Stale values:**
 
 - `0.1793236413`
 - `0.0006654433`
 
-with:
+**Required/current values:**
 
 - `0.1790498327`
 - `0.0007481264`
+
+### `00_protocol/BOOTSTRAP_METHOD_AND_GUARDRAILS.md`
+
+**Stale form:** `The two ge1pct setups that meet the materiality rule...`
+
+**Required/current interpretation:** one >=1% oil-rents setup meets the materiality rule — the normalized outcome specification. The corresponding primary-outcome >=1% setup is marginal. The remaining caveat is that the material result has a lower uncertainty bound close to zero and comes from a fixed-prediction bootstrap that excludes model-refitting variability.
+
+### `08_validation/Reproducibility_Report.md`
+
+**Stale form:** `Two oil-rent setups in the pre-2016 >=1% universe meet the prespecified materiality rule.`
+
+**Required/current interpretation:** one setup meets the materiality rule — the normalized >=1% oil-rents setup — while the primary >=1% setup is marginal.
 
 ---
 
 ## Final Alignment Check
 
-After applying the edits above:
+After applying the manuscript edits and regenerating the reporting layer where required:
 
 - Search the manuscript for `two material` and confirm no remaining passage describes two material oil-rents setups.
-- Search for `0.1793` and confirm no stale base-margin headline remains.
-- Search for `0.00067` and confirm no stale Regulatory Quality headline increment remains.
+- Search the manuscript for `0.1793` and confirm no stale base-margin headline remains.
+- Search the manuscript for `0.00067` and confirm no stale Regulatory Quality headline increment remains.
 - Confirm Table 3 matches `07_outputs/Manuscript_Table3_Setup_Evidence_Compact.csv`.
 - Confirm Table 4 matches `07_outputs/Manuscript_Table4_Final_Synthesis.csv`.
 - Confirm Figure 2a shows the corrected oil-rents pattern with only the normalized >=1% cell marked Material.
-- Confirm the Abstract, Results, Discussion and Conclusion all report the same oil-rents setup count: **1 material, 4 marginal, 5 setup-dependent**.
+- Confirm the Abstract, Results, Discussion and Conclusion all report **1 material, 4 marginal, 5 setup-dependent** for oil rents.
+- Search live repository documentation for stale claims that **two** >=1% oil-rents setups are material.
+- Search live repository documentation for stale Regulatory Quality headline values `0.1793236`, `0.1793236413`, `0.0006654`, or `0.0006654433`.
+- After rerunning `07_integrate_bootstrap_verdicts.py`, confirm `Central_Verdict_Sensitivity_Table.csv`, `Oil_Rent_Threshold_Sensitivity_Table.csv`, and `Material_Setup_Caveats.csv` all use the single-material-setup interpretation.
 
-Once those checks pass, the manuscript narrative and tables will be aligned with the current V0.4.3 reporting outputs.
+Once those checks pass, the manuscript narrative, documentation and generated reporting annotations are aligned with the current V0.4.3 outputs.
