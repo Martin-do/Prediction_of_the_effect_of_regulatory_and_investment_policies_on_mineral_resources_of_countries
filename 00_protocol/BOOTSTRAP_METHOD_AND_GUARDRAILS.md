@@ -16,5 +16,4 @@ The bootstrap estimand is the paired change in performance under country-cluster
 
 ## Material-cell guardrail
 
-The two ge1pct setups that meet the materiality rule are supportive, not standalone confirmatory findings. They arise from correlated prespecified validation environments, have lower uncertainty bounds close to zero, and are evaluated with the conditional fixed-prediction bootstrap described above. Cross-setup conclusions do not count the setups as independent replications and do not depend on the material bin being populated.
-
+The single ge1pct setup that meets the materiality rule is the normalized outcome specification. It is supportive, not standalone confirmatory evidence, because its lower uncertainty bound is close to zero and it is evaluated with the conditional fixed-prediction bootstrap described above. The corresponding primary-outcome ge1pct setup is directionally positive but marginal. Cross-setup conclusions do not depend on the material bin being populated.
