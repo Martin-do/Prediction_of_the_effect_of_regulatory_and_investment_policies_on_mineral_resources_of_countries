@@ -8,15 +8,50 @@ from common import OUTPUT_DIR
 def main() -> None:
     central = pd.read_csv(OUTPUT_DIR / "Central_Verdict_Sensitivity_Table.csv")
     bootstrap = pd.read_csv(OUTPUT_DIR / "Bootstrap_Five_Way_Setup_Verdicts.csv")
+
     merge_keys = ["signal", "target_role", "target", "universe"]
-    cols = merge_keys + [
-        "bootstrap_units", "material_units", "marginal_units", "setup_dependent_units",
-        "unsupported_units", "coverage_limited_units", "positive_or_better_share",
-        "bootstrap_five_way_setup_verdict", "verdict_scheme_order",
+    bootstrap_columns = [
+        "bootstrap_units",
+        "material_units",
+        "marginal_units",
+        "setup_dependent_units",
+        "unsupported_units",
+        "coverage_limited_units",
+        "positive_or_better_share",
+        "bootstrap_five_way_setup_verdict",
+        "verdict_scheme_order",
     ]
-    if "setup_verdict" in central.columns:
-        central = central.rename(columns={"setup_verdict": "point_estimate_setup_verdict_deprecated"})
-    merged = central.merge(bootstrap[cols], on=merge_keys, how="left", validate="one_to_one")
+    cols = merge_keys + bootstrap_columns
+
+    # On a fresh pre-bootstrap table, preserve the point-estimate verdict for audit comparison.
+    # On an already integrated table, remove the previous integration layer before merging again.
+    already_integrated = "bootstrap_five_way_setup_verdict" in central.columns
+    if already_integrated:
+        central = central.drop(columns=["setup_verdict"], errors="ignore")
+    elif (
+        "setup_verdict" in central.columns
+        and "point_estimate_setup_verdict_deprecated" not in central.columns
+    ):
+        central = central.rename(
+            columns={"setup_verdict": "point_estimate_setup_verdict_deprecated"}
+        )
+
+    integration_columns = bootstrap_columns + [
+        "decision_basis",
+        "material_setup_requires_caution",
+        "material_setup_interpretation",
+    ]
+    central = central.drop(
+        columns=[column for column in integration_columns if column in central.columns],
+        errors="ignore",
+    )
+
+    merged = central.merge(
+        bootstrap[cols],
+        on=merge_keys,
+        how="left",
+        validate="one_to_one",
+    )
     merged["setup_verdict"] = merged["bootstrap_five_way_setup_verdict"]
     merged["decision_basis"] = (
         "Paired country-cluster bootstrap across algorithms and prespecified validation geometries; "
